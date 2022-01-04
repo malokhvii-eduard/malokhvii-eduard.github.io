@@ -1,2 +1,2 @@
-.husky/** linguist-detectable=false
 *.json linguist-detectable=true
+package*.json linguist-detectable=false
