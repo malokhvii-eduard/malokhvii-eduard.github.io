@@ -2,7 +2,8 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Eduard Malokhvii",
-    "label": "Full Stack Developer"
+    "label": "Full Stack Developer",
+    "email": "malokhvii.ee@gmail.com"
   },
   "meta": {
     "version": "v1.0.0",
