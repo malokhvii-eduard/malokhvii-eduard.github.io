@@ -126,6 +126,13 @@
   ],
   "projects": [
     {
+      "name": "arduino-bme280",
+      "startDate": "2021-10-31",
+      "endDate": "2021-12-31",
+      "url": "https://github.com/malokhvii-eduard/arduino-bme280",
+      "description": "💧 Arduino library for Bosch Sensortec BME280 – combined temperature, pressure, humidity sensor. The library allows using the sensor over I2C or SPI on any board that supports Arduino.\n\n🛠️ Technologies & Environment: C++, PlatformIO, Arduino, Markdown, googletest, gcovr, npm, commitizen, husky, lint-staged, clang-format, Prettier, markdownlint, commitlint, sematic-release, I2C, SPI, BME280, Git, GitHub, GitHub Actions."
+    },
+    {
       "name": "arduino-mhz19",
       "startDate": "2021-10-31",
       "endDate": "2021-12-31",
