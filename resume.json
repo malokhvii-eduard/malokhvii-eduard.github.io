@@ -126,6 +126,13 @@
   ],
   "projects": [
     {
+      "name": "airly",
+      "startDate": "2021-11-30",
+      "endDate": "2021-12-31",
+      "url": "https://github.com/malokhvii-eduard/airly",
+      "description": "💨 A collection of tiny and ultra-cheap web things for monitoring air quality. The devices measure: temperature, humidity, barometric pressure, the concentration of carbon dioxide, dew point. The devices easily integrate into the Web of Things ecosystem and can be used indoor or outdoor.\n\n🛠️ Technologies & Environment: Markdown, C++, PlatformIO, Arduino, WebThings, npm, commitizen, husky, lint-staged, clang-format, Prettier, markdownlint, commitlint, sematic-release, UART, I2C, SPI, BME280, MH-Z19, ESP8266, WeMos D1, Git, GitHub, GitHub Actions."
+    },
+    {
       "name": "arduino-bme280",
       "startDate": "2021-10-31",
       "endDate": "2021-12-31",
