@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - "*"
+    tags-ignore:
+      - v*
+  pull_request:
+
+jobs:
+  lint:
+    name: 🎨 Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Read .nvmrc
+        run: echo ::set-output name=NODE_VERSION::$(cat .nvmrc)
+        id: nvm
+      - name: Use Node.js ${{ steps.nvm.outputs.NODE_VERSION }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ steps.nvm.outputs.NODE_VERSION }}
+      - name: Install markdownlint
+        run: npm install -g markdownlint-cli
+      - name: Check Markdown files
+        run: markdownlint .
