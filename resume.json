@@ -41,7 +41,7 @@
     {
       "name": "Self-Employed",
       "position": "Network Engineer",
-      "startDate": "2021-10-31",
+      "startDate": "2021-10-01",
       "endDate": "2021-10-31",
       "summary": "🎯 Designed, configured, and installed Wi-Fi with fast, reliable internet access in a car.\n\n🎯 Configured real-time GPS tracking.\n\n🛠️ Technologies & Environment: RouterOS, WinBox, 2G, 3G, 4G, Wi-Fi 4 (802.11b/g/n), GPS, MikroTik LtAP mini LTE kit."
     },
@@ -57,21 +57,21 @@
     {
       "name": "Self-Employed",
       "position": "Network Engineer",
-      "startDate": "2021-03-31",
+      "startDate": "2021-03-01",
       "endDate": "2021-03-31",
       "summary": "🎯 Designed, configured, and installed a robust Wi-Fi in a cottage.\n\n🎯 Configured roaming between access points.\n\n🛠️ Technologies & Environment: RouterOS, WinBox, CAPsMAN, Wi-Fi 4 (802.11b/g/n), Wi-Fi 5 (802.11a/n/ac), MikroTik RB951G-2HnD, MikroTik cAP lite, MikroTik cAP ac."
     },
     {
       "name": "Self-Employed",
       "position": "Full Stack Developer",
-      "startDate": "2021-02-28",
+      "startDate": "2021-02-01",
       "endDate": "2021-02-28",
       "summary": "🎯 Developed a small multi-language site with serverless architecture.\n\n🎯 Configured custom events for Google Analytics UA/4.\n\n🎯 Configured basic CI/CD.\n\n🎯 Achieved a good score on Google Lighthouse.\n\n🎯 Added metadata for Open Graph protocol, Twitter Cards, Schema.org.\n\n🛠️ Technologies & Environment: JavaScript, Babel, HTML5, Sass, Vue.js, Vuex, Nuxt.js, Vuetify, sal.js, ky, Markdown, npm, commitizen, husky, lint-staged, webpack, ESLint, Prettier, commitlint, stylelint, PostCSS, PurgeCSS, LQIP, Material Design, Material Design Icons, Simple Icons, PWA, Netlify, Google Tag Manager, Google Analytics, Google Search Console, Git, GitHub, GitHub Actions.\n\n🔗 See site: el-logistics.com.ua"
     },
     {
       "name": "Self-Employed",
       "position": "Python Developer",
-      "startDate": "2020-12-31",
+      "startDate": "2020-12-01",
       "endDate": "2020-12-31",
       "summary": "🎯 Developed a crawler for olx.ua to obtain detailed information about offers on the platform.\n\n🛠️ Technologies & Environment: Python, Selenium, click, tqdm, pydantic, multiprocessing."
     },
