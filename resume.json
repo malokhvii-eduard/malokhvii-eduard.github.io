@@ -30,6 +30,15 @@
   },
   "work": [
     {
+      "name": "TenViz",
+      "position": "Python Developer",
+      "startDate": "2020-08-31",
+      "endDate": "2020-12-31",
+      "location": "Kharkiv, Ukraine",
+      "url": "https://www.linkedin.com/company/tenviz",
+      "summary": "🎯 Developed parsers and crawlers for: investing.com, ishares.com, barchart.com, yahoo.com.\n\n🎯 Developed a fully automated system for creating screenshots of charts for financial reports.\n\n🎯 Developed a service for automated configuration, management, and coordination of Tor proxies.\n\n🎯 Improved performance and quality of various parsers and web crawlers.\n\n🎯 Multitude of bug fixes including emergency cases.\n\n⚡️ Technologies & Environment: Python, PostgreSQL, Selenium, Flask, Swagger, REST, Docker, docker-compose, Markdown, pandas, psycopg2, asyncio, asyncpg, beautifulsoup4, requests, lxml, multiprocessing, Linux, Git, GitLab."
+    },
+    {
       "name": "GlobalLogic",
       "position": "Apprentice at Linux Kernel GL BaseCamp",
       "startDate": "2019-11-30",
