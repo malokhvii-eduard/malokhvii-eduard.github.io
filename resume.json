@@ -112,6 +112,10 @@
   ],
   "publications": [
     {
+      "name": "Analytical overview and comparison of modern JavaScript solutions for web application development",
+      "releaseDate": "2021-11-26"
+    },
+    {
       "name": "Using the Internet of Things concept to build a \"Smart Home\"",
       "publisher": "National Technical University \"Kharkiv Polytechnic Institute\"",
       "releaseDate": "2021-09-02",
