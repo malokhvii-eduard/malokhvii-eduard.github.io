@@ -30,6 +30,15 @@
   },
   "work": [
     {
+      "name": "ООО \"НОВТЕХПРОМ\"",
+      "position": "Network Administrator",
+      "startDate": "2021-06-30",
+      "endDate": "2021-08-31",
+      "location": "Kharkiv, Ukraine",
+      "url": "https://ntprom.com.ua",
+      "summary": "🎯 Optimized network performance and reliability by maintaining hardware and software, analyzing technical issues.\n\n🎯 Migrated all infrastructure to the hypervisor.\n\n🎯 Maintained the new infrastructure of the company.\n\n🛠️ Technologies & Environment: RouterOS, WinBox, VMware ESXi 7, VMware vSphere, HPE ProLiant, HP iLO, Windows Server 2019, RDP."
+    },
+    {
       "name": "Self-Employed",
       "position": "Network Engineer",
       "startDate": "2021-03-31",
