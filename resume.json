@@ -110,6 +110,12 @@
       "endDate": "2020-12-31"
     }
   ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Intermediate"
+    }
+  ],
   "meta": {
     "version": "v1.0.0",
     "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
