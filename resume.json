@@ -4,7 +4,11 @@
     "name": "Eduard Malokhvii",
     "label": "Full Stack Developer",
     "email": "malokhvii.ee@gmail.com",
-    "phone": "+380680505202"
+    "phone": "+380680505202",
+    "location": {
+      "countryCode": "UA",
+      "city": "Kharkiv"
+    }
   },
   "meta": {
     "version": "v1.0.0",
