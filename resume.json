@@ -28,6 +28,17 @@
       }
     ]
   },
+  "work": [
+    {
+      "name": "GlobalLogic",
+      "position": "Apprentice at Linux Kernel GL BaseCamp",
+      "startDate": "2019-11-30",
+      "endDate": "2020-03-31",
+      "location": "Kharkiv, Ukraine",
+      "url": "https://www.linkedin.com/company/globallogic",
+      "summary": "🎯 Learned the foundations of development for Linux User Space.\n\n🎯 Learned the foundations of development for Linux Kernel (Virtual file system, Programming interface, Resources, Modules, Dependencies, Loading/unloading, Diagnostics, Debugging, Character device driver, Device Tree, ACPI, Time Management, Memory Management, Interrupts Handling, Concurrency, and Synchronization).\n\n⚡️ Technologies & Environment: C, C++, Make, GCC, Clang, Linux, Linux Kernel, ARM, HAL, STM32CubeIDE, STM32CubeMX, Raspberry Pi, Git.\n\n🔗 See more: www.globallogic.com/ua/gl-basecamp/linux-kernel\n\n🔗 See final project: github.com/malokhvii-eduard/lkmod-bme280"
+    }
+  ],
   "education": [
     {
       "institution": "National Technical University \"Kharkiv Polytechnic Institute\"",
