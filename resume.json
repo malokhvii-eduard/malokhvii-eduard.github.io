@@ -30,6 +30,15 @@
   },
   "work": [
     {
+      "name": "Techstack Ltd",
+      "position": "Python Developer",
+      "startDate": "2021-12-01",
+      "endDate": "2021-12-31",
+      "location": "Kharkiv, Ukraine",
+      "url": "https://www.linkedin.com/company/techstack-limited",
+      "summary": "🎯 Developed a tool for automation marketing processes on LinkedIn.\n\n🎯 Worked closely with Sales Team.\n\n🛠️ Technologies & Environment: Python, Selenium, click, tqdm, gspread, plyer, multiprocessing."
+    },
+    {
       "name": "Self-Employed",
       "position": "Network Engineer",
       "startDate": "2021-10-31",
