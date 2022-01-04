@@ -124,6 +124,10 @@
         "Vuetify",
         "Nuxt"
       ]
+    },
+    {
+      "name": "Back-End",
+      "keywords": ["Python", "Flask", "FastAPI", "PostgreSQL", "REST"]
     }
   ],
   "languages": [
