@@ -110,6 +110,22 @@
       "endDate": "2020-12-31"
     }
   ],
+  "skills": [
+    {
+      "name": "Front-End",
+      "keywords": [
+        "JavaScript",
+        "TypeScript",
+        "HTML5",
+        "CSS3",
+        "SASS",
+        "Vue",
+        "Vuex",
+        "Vuetify",
+        "Nuxt"
+      ]
+    }
+  ],
   "languages": [
     {
       "language": "English",
