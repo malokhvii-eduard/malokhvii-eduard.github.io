@@ -126,6 +126,13 @@
   ],
   "projects": [
     {
+      "name": "arduino-mhz19",
+      "startDate": "2021-10-31",
+      "endDate": "2021-12-31",
+      "url": "https://github.com/malokhvii-eduard/arduino-mhz19",
+      "description": "💥 Arduino library for Winsen MH-Z19 – infrared carbon dioxide sensor. The library allows using the sensor over hardware or software UART on any board that supports Arduino.\n\n🛠️ Technologies & Environment: C++, PlatformIO, Arduino, Markdown, googletest, gcovr, npm, commitizen, husky, lint-staged, clang-format, Prettier, markdownlint, commitlint, sematic-release, UART, MH-Z19, Git, GitHub, GitHub Actions."
+    },
+    {
       "name": "mod3d",
       "startDate": "2020-12-01",
       "endDate": "2020-12-31",
