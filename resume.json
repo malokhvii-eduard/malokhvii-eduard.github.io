@@ -31,6 +31,13 @@
   "work": [
     {
       "name": "Self-Employed",
+      "position": "Full Stack Developer",
+      "startDate": "2021-02-28",
+      "endDate": "2021-02-28",
+      "summary": "🎯 Developed a small multi-language site with serverless architecture.\n\n🎯 Configured custom events for Google Analytics UA/4.\n\n🎯 Configured basic CI/CD.\n\n🎯 Achieved a good score on Google Lighthouse.\n\n🎯 Added metadata for Open Graph protocol, Twitter Cards, Schema.org.\n\n⚡️ Technologies & Environment: JavaScript, Babel, HTML5, Sass, Vue.js, Vuex, Nuxt.js, Vuetify, sal.js, ky, Markdown, npm, commitizen, husky, lint-staged, webpack, ESLint, Prettier, commitlint, stylelint, PostCSS, PurgeCSS, LQIP, Material Design, Material Design Icons, Simple Icons, PWA, Netlify, Google Tag Manager, Google Analytics, Google Search Console, Git, GitHub, GitHub Actions.\n\n🔗 See site: el-logistics.com.ua"
+    },
+    {
+      "name": "Self-Employed",
       "position": "Python Developer",
       "startDate": "2020-12-31",
       "endDate": "2020-12-31",
