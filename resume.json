@@ -12,6 +12,11 @@
     },
     "profiles": [
       {
+        "network": "LinkedIn",
+        "username": "malokhvii-eduard",
+        "url": "https://www.linkedin.com/in/malokhvii-eduard"
+      },
+      {
         "network": "GitHub",
         "username": "malokhvii-eduard",
         "url": "https://github.com/malokhvii-eduard"
