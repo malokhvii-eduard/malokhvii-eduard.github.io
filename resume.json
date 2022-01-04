@@ -30,6 +30,13 @@
   },
   "work": [
     {
+      "name": "Self-Employed",
+      "position": "Python Developer",
+      "startDate": "2020-12-31",
+      "endDate": "2020-12-31",
+      "summary": "🎯 Developed a crawler for olx.ua to obtain detailed information about offers on the platform.\n\n⚡️ Technologies & Environment: Python, Selenium, click, tqdm, pydantic, multiprocessing."
+    },
+    {
       "name": "TenViz",
       "position": "Python Developer",
       "startDate": "2020-08-31",
