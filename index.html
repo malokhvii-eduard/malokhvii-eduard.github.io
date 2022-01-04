@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Eduard Malokhvii</title>
+      <meta name="description" content="👨‍💻 Inventive Full Stack Developer with over 2 years of wide knowledge in Python, Back-end Development, Web Scraping, Containerisation areas with strong experience in Vue.js, Front-end Development, CI/CD, networking. 🎓 BA &amp;amp; MA in Computer Engineering. 🚵🏊 Active sport participiant, ☕️ coffee adept.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap">
+    <style>:root {
+  color-scheme: light dark;
+
+  --color-background: #ffffff; /* White */
+  --color-muted: #f3f4f5; /* Light Gray 200 */
+  --color-primary: #191e23; /* Dark Gray 900 */
+  --color-secondary: #6c7781; /* Dark Gray 300 */
+  --color-accent: #ffb900; /* Accent Yellow */
+  --color-link: #46b450; /* Accent Green */
+
+  --scale-ratio: 1.25;
+  --scale0: 1rem;
+  --scale1: calc(var(--scale0) * var(--scale-ratio));
+  --scale2: calc(var(--scale1) * var(--scale-ratio));
+  --scale3: calc(var(--scale2) * var(--scale-ratio));
+  --scale4: calc(var(--scale3) * var(--scale-ratio));
+  --scale5: calc(var(--scale4) * var(--scale-ratio));
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #191e23; /* Dark Gray 900 */
+    --color-muted: #23282d; /* Dark Gray 800 */
+    --color-primary: #fbfbfc; /* Light Gray 100 */
+    --color-secondary: #ccd0d4; /* Light Gray 700 */
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-primary);
+  display: grid;
+  font: 1em/1.5 Lato, sans-serif;
+  gap: 2em;
+  grid-template-columns:
+    [full-start]
+    1fr
+    [main-start side-start]
+    minmax(min-content, 12em)
+    [side-end content-start]
+    minmax(min-content, 36em)
+    [main-end content-end]
+    1fr
+    [full-end];
+  grid-template-rows: auto [content] 0;
+  margin-bottom: 4em;
+}
+
+body::before {
+  content: '';
+  grid-column: full;
+  grid-row: content;
+}
+
+ol,
+ul {
+  padding-left: 1em;
+}
+
+li + li {
+  margin-top: 0.4em;
+}
+
+li::marker,
+.network {
+  color: var(--color-secondary);
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:focus,
+a:hover {
+  color: var(--color-accent);
+}
+
+h1,
+h2,
+h3,
+h5 {
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: var(--scale5);
+}
+
+h2 {
+  color: var(--color-secondary);
+  font-size: var(--scale4);
+}
+
+h3 {
+  color: var(--color-accent);
+  font-size: var(--scale3);
+  grid-column: side;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: var(--scale2);
+}
+
+h5 {
+  font-size: var(--scale1);
+}
+
+h6 {
+  font-size: var(--scale0);
+}
+
+blockquote {
+  border-left: 0.2em solid var(--color-muted);
+  padding-left: 1em;
+}
+
+cite {
+  color: var(--color-secondary);
+  font-style: inherit;
+}
+
+cite::before {
+  content: '— ';
+}
+
+svg {
+  margin-right: 0.2em;
+  vertical-align: -0.2em;
+}
+
+.masthead {
+  background: var(--color-muted);
+  display: inherit;
+  gap: inherit;
+  grid-column: full;
+  grid-template-columns: inherit;
+  padding: 4em 0;
+  text-align: center;
+}
+
+.masthead > *,
+section {
+  grid-column: main;
+}
+
+.masthead > img {
+  border-radius: 50%;
+  margin: 0 auto;
+  max-width: 12em;
+}
+
+article > * + *,
+blockquote > * + * {
+  margin-top: 0.6em;
+}
+
+.meta {
+  color: var(--color-secondary);
+}
+
+.stack {
+  display: grid;
+  gap: 1.5em;
+}
+
+.icon-list {
+  list-style: none;
+  padding: 0;
+}
+
+.grid-list {
+  display: grid;
+  gap: 1em;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.tag-list > li {
+  background: var(--color-muted);
+  margin: 0 0.2em 0.2em 0;
+  padding: 0.2em 0.6em;
+}
+
+.bullet-item:not(:first-child)::before {
+  content: '· ';
+  margin: 0 0.2em;
+}
+
+@media print, (min-width: 48em) {
+  h3 {
+    text-align: right;
+    margin-bottom: inherit;
+  }
+
+  .masthead {
+    text-align: inherit;
+  }
+
+  .masthead > *,
+  section {
+    grid-column: content;
+  }
+
+  .masthead img {
+    grid-column: side;
+    grid-row: span 2;
+    max-width: 100%;
+  }
+
+  section {
+    display: contents;
+  }
+
+  .grid-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+</style>
+  </head>
+  <body>
+      <header class="masthead">
+        <div>
+            <h1>Eduard Malokhvii</h1>
+            <h2>Full Stack Developer</h2>
+        </div>
+          <article>
+            <p>👨‍💻 Inventive Full Stack Developer with over 2 years of wide knowledge in Python, Back-end Development, Web Scraping, Containerisation areas with strong experience in Vue.js, Front-end Development, CI/CD, networking. 🎓 BA &amp; MA in Computer Engineering. 🚵🏊 Active sport participiant, ☕️ coffee adept.</p>
+          </article>
+        <ul class="icon-list">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Kharkiv, Ukraine
+              </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <a href="mailto:malokhvii.ee@gmail.com">malokhvii.ee@gmail.com</a>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <a href="tel:+380680505202">+380680505202</a>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                  <a href="https://www.linkedin.com/in/malokhvii-eduard">malokhvii-eduard</a>
+                <span class="network">(LinkedIn)</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <a href="https://github.com/malokhvii-eduard">malokhvii-eduard</a>
+                <span class="network">(GitHub)</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                  <a href="https://twitter.com/EduardMalokhvii">@EduardMalokhvii</a>
+                <span class="network">(Twitter)</span>
+            </li>
+        </ul>
+      </header>
+
+      <section id="work">
+        <h3>Work</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <h4>Python Developer</h4>
+                <div class="meta">
+                  <div>
+                    <strong><a href="https://www.linkedin.com/company/techstack-limited">Techstack Ltd</a></strong>
+                  </div>
+                  <div>
+                    <time datetime="2021-12-01">Dec 2021</time> –
+                    <time datetime="2021-12-31">Dec 2021</time>
+                  </div>
+                    <div>Kharkiv, Ukraine</div>
+                </div>
+              </header>
+                <p>🎯 Developed a tool for automation marketing processes on LinkedIn.</p>
+    <p>🎯 Worked closely with Sales Team.</p>
+    <p>🛠️ Technologies &amp; Environment: Python, Selenium, click, tqdm, gspread, plyer, multiprocessing.</p>
+            </article>
+            <article>
+              <header>
+                <h4>Network Engineer</h4>
+                <div class="meta">
+                  <div>
+                    <strong>Self-Employed</strong>
+                  </div>
+                  <div>
+                    <time datetime="2021-10-01">Oct 2021</time> –
+                    <time datetime="2021-10-31">Oct 2021</time>
+                  </div>
+                </div>
+              </header>
+                <p>🎯 Designed, configured, and installed Wi-Fi with fast, reliable internet access in a car.</p>
+    <p>🎯 Configured real-time GPS tracking.</p>
+    <p>🛠️ Technologies &amp; Environment: RouterOS, WinBox, 2G, 3G, 4G, Wi-Fi 4 (802.11b/g/n), GPS, MikroTik LtAP mini LTE kit.</p>
+            </article>
+            <article>
+              <header>
+                <h4>Network Administrator</h4>
+                <div class="meta">
+                  <div>
+                    <strong><a href="https://ntprom.com.ua">ООО &quot;НОВТЕХПРОМ&quot;</a></strong>
+                  </div>
+                  <div>
+                    <time datetime="2021-06-30">Jun 2021</time> –
+                    <time datetime="2021-08-31">Aug 2021</time>
+                  </div>
+                    <div>Kharkiv, Ukraine</div>
+                </div>
+              </header>
+                <p>🎯 Optimized network performance and reliability by maintaining hardware and software, analyzing technical issues.</p>
+    <p>🎯 Migrated all infrastructure to the hypervisor.</p>
+    <p>🎯 Maintained the new infrastructure of the company.</p>
+    <p>🛠️ Technologies &amp; Environment: RouterOS, WinBox, VMware ESXi 7, VMware vSphere, HPE ProLiant, HP iLO, Windows Server 2019, RDP.</p>
+            </article>
+            <article>
+              <header>
+                <h4>Network Engineer</h4>
+                <div class="meta">
+                  <div>
+                    <strong>Self-Employed</strong>
+                  </div>
+                  <div>
+                    <time datetime="2021-03-01">Mar 2021</time> –
+                    <time datetime="2021-03-31">Mar 2021</time>
+                  </div>
+                </div>
+              </header>
+                <p>🎯 Designed, configured, and installed a robust Wi-Fi in a cottage.</p>
+    <p>🎯 Configured roaming between access points.</p>
+    <p>🛠️ Technologies &amp; Environment: RouterOS, WinBox, CAPsMAN, Wi-Fi 4 (802.11b/g/n), Wi-Fi 5 (802.11a/n/ac), MikroTik RB951G-2HnD, MikroTik cAP lite, MikroTik cAP ac.</p>
+            </article>
+            <article>
+              <header>
+                <h4>Full Stack Developer</h4>
+                <div class="meta">
+                  <div>
+                    <strong>Self-Employed</strong>
+                  </div>
+                  <div>
+                    <time datetime="2021-02-01">Feb 2021</time> –
+                    <time datetime="2021-02-28">Feb 2021</time>
+                  </div>
+                </div>
+              </header>
+                <p>🎯 Developed a small multi-language site with serverless architecture.</p>
+    <p>🎯 Configured custom events for Google Analytics UA/4.</p>
+    <p>🎯 Configured basic CI/CD.</p>
+    <p>🎯 Achieved a good score on Google Lighthouse.</p>
+    <p>🎯 Added metadata for Open Graph protocol, Twitter Cards, Schema.org.</p>
+    <p>🛠️ Technologies &amp; Environment: JavaScript, Babel, HTML5, Sass, Vue.js, Vuex, Nuxt.js, Vuetify, sal.js, ky, Markdown, npm, commitizen, husky, lint-staged, webpack, ESLint, Prettier, commitlint, stylelint, PostCSS, PurgeCSS, LQIP, Material Design, Material Design Icons, Simple Icons, PWA, Netlify, Google Tag Manager, Google Analytics, Google Search Console, Git, GitHub, GitHub Actions.</p>
+    <p>🔗 See site: el-logistics.com.ua</p>
+            </article>
+            <article>
+              <header>
+                <h4>Python Developer</h4>
+                <div class="meta">
+                  <div>
+                    <strong>Self-Employed</strong>
+                  </div>
+                  <div>
+                    <time datetime="2020-12-01">Dec 2020</time> –
+                    <time datetime="2020-12-31">Dec 2020</time>
+                  </div>
+                </div>
+              </header>
+                <p>🎯 Developed a crawler for olx.ua to obtain detailed information about offers on the platform.</p>
+    <p>🛠️ Technologies &amp; Environment: Python, Selenium, click, tqdm, pydantic, multiprocessing.</p>
+            </article>
+            <article>
+              <header>
+                <h4>Python Developer</h4>
+                <div class="meta">
+                  <div>
+                    <strong><a href="https://www.linkedin.com/company/tenviz">TenViz</a></strong>
+                  </div>
+                  <div>
+                    <time datetime="2020-08-31">Aug 2020</time> –
+                    <time datetime="2020-12-31">Dec 2020</time>
+                  </div>
+                    <div>Kharkiv, Ukraine</div>
+                </div>
+              </header>
+                <p>🎯 Developed parsers and crawlers for: investing.com, ishares.com, barchart.com, yahoo.com.</p>
+    <p>🎯 Developed a fully automated system for creating screenshots of charts for financial reports.</p>
+    <p>🎯 Developed a service for automated configuration, management, and coordination of Tor proxies.</p>
+    <p>🎯 Improved performance and quality of various parsers and web crawlers.</p>
+    <p>🎯 Multitude of bug fixes including emergency cases.</p>
+    <p>🛠️ Technologies &amp; Environment: Python, PostgreSQL, Selenium, Flask, Swagger, REST, Docker, docker-compose, Markdown, pandas, psycopg2, asyncio, asyncpg, beautifulsoup4, requests, lxml, multiprocessing, Linux, Git, GitLab.</p>
+            </article>
+            <article>
+              <header>
+                <h4>Apprentice at Linux Kernel GL BaseCamp</h4>
+                <div class="meta">
+                  <div>
+                    <strong><a href="https://www.linkedin.com/company/globallogic">GlobalLogic</a></strong>
+                  </div>
+                  <div>
+                    <time datetime="2019-11-30">Nov 2019</time> –
+                    <time datetime="2020-03-31">Mar 2020</time>
+                  </div>
+                    <div>Kharkiv, Ukraine</div>
+                </div>
+              </header>
+                <p>🎯 Learned the foundations of development for Linux User Space.</p>
+    <p>🎯 Learned the foundations of development for Linux Kernel (Virtual file system, Programming interface, Resources, Modules, Dependencies, Loading/unloading, Diagnostics, Debugging, Character device driver, Device Tree, ACPI, Time Management, Memory Management, Interrupts Handling, Concurrency, and Synchronization).</p>
+    <p>🛠️ Technologies &amp; Environment: C, C++, Make, GCC, Clang, Linux, Linux Kernel, ARM, HAL, STM32CubeIDE, STM32CubeMX, Raspberry Pi, Git.</p>
+    <p>🔗 See more: www.globallogic.com/ua/gl-basecamp/linux-kernel</p>
+    <p>🔗 See final project: github.com/malokhvii-eduard/lkmod-bme280</p>
+            </article>
+        </div>
+      </section>
+      <section id="education">
+        <h3>Education</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <h4>National Technical University &quot;Kharkiv Polytechnic Institute&quot;</h4>
+                <div class="meta">
+                    <strong>Computer Engineering</strong>
+                  <div>
+                    <time datetime="2020-09-30">Sep 2020</time> –
+                    <time datetime="2021-12-31">Dec 2021</time>
+                  </div>
+                </div>
+              </header>
+                <p>Master's degree</p>
+            </article>
+            <article>
+              <header>
+                <h4>National Technical University &quot;Kharkiv Polytechnic Institute&quot;</h4>
+                <div class="meta">
+                    <strong>Computer Engineering</strong>
+                  <div>
+                    <time datetime="2016-12-31">Dec 2016</time> –
+                    <time datetime="2020-12-31">Dec 2020</time>
+                  </div>
+                </div>
+              </header>
+                <p>Bachelor's degree</p>
+            </article>
+        </div>
+      </section>
+      <section id="projects">
+        <h3>Projects</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <h4><a href="https://github.com/malokhvii-eduard/airly">airly</a></h4>
+                <div class="meta">
+                  <div>
+                  </div>
+                  <div>
+                    <time datetime="2021-11-30">Nov 2021</time> –
+                    <time datetime="2021-12-31">Dec 2021</time>
+                  </div>
+                </div>
+              </header>
+                <p>💨 A collection of tiny and ultra-cheap web things for monitoring air quality. The devices measure: temperature, humidity, barometric pressure, the concentration of carbon dioxide, dew point. The devices easily integrate into the Web of Things ecosystem and can be used indoor or outdoor.</p>
+    <p>🛠️ Technologies &amp; Environment: Markdown, C++, PlatformIO, Arduino, WebThings, npm, commitizen, husky, lint-staged, clang-format, Prettier, markdownlint, commitlint, sematic-release, UART, I2C, SPI, BME280, MH-Z19, ESP8266, WeMos D1, Git, GitHub, GitHub Actions.</p>
+            </article>
+            <article>
+              <header>
+                <h4><a href="https://github.com/malokhvii-eduard/arduino-bme280">arduino-bme280</a></h4>
+                <div class="meta">
+                  <div>
+                  </div>
+                  <div>
+                    <time datetime="2021-10-31">Oct 2021</time> –
+                    <time datetime="2021-12-31">Dec 2021</time>
+                  </div>
+                </div>
+              </header>
+                <p>💧 Arduino library for Bosch Sensortec BME280 – combined temperature, pressure, humidity sensor. The library allows using the sensor over I2C or SPI on any board that supports Arduino.</p>
+    <p>🛠️ Technologies &amp; Environment: C++, PlatformIO, Arduino, Markdown, googletest, gcovr, npm, commitizen, husky, lint-staged, clang-format, Prettier, markdownlint, commitlint, sematic-release, I2C, SPI, BME280, Git, GitHub, GitHub Actions.</p>
+            </article>
+            <article>
+              <header>
+                <h4><a href="https://github.com/malokhvii-eduard/arduino-mhz19">arduino-mhz19</a></h4>
+                <div class="meta">
+                  <div>
+                  </div>
+                  <div>
+                    <time datetime="2021-10-31">Oct 2021</time> –
+                    <time datetime="2021-12-31">Dec 2021</time>
+                  </div>
+                </div>
+              </header>
+                <p>💥 Arduino library for Winsen MH-Z19 – infrared carbon dioxide sensor. The library allows using the sensor over hardware or software UART on any board that supports Arduino.</p>
+    <p>🛠️ Technologies &amp; Environment: C++, PlatformIO, Arduino, Markdown, googletest, gcovr, npm, commitizen, husky, lint-staged, clang-format, Prettier, markdownlint, commitlint, sematic-release, UART, MH-Z19, Git, GitHub, GitHub Actions.</p>
+            </article>
+            <article>
+              <header>
+                <h4><a href="https://github.com/malokhvii-eduard/mod3d">mod3d</a></h4>
+                <div class="meta">
+                  <div>
+                  </div>
+                  <div>
+                    <time datetime="2020-12-01">Dec 2020</time> –
+                    <time datetime="2020-12-31">Dec 2020</time>
+                  </div>
+                </div>
+              </header>
+                <p>🎨 A simple 3D editor, that allows wrapping a 3D model into a texture. As a texture, there could be used UV mappings, images, or figures.</p>
+    <p>🛠️ Technologies &amp; Environment: JavaScript, Babel, HTML5, Sass, Vue.js, Vuex, Vuetify, WebGL, Three.js, IndexedDB, Markdown, yarn, commitizen, husky, lint-staged, webpack, Prettier, ESLint, stylelint, commitlint, markdownlint, PostCSS, PurgeCSS, LQIP, Material Design, Material Design Icons, Simple Icons, PWA, Netlify, Blender, Git, GitHub, GitHub Actions.</p>
+            </article>
+            <article>
+              <header>
+                <h4><a href="https://github.com/malokhvii-eduard/lkmod-bme280">lkmod-bme280</a></h4>
+                <div class="meta">
+                  <div>
+                  </div>
+                  <div>
+                    <time datetime="2019-12-31">Dec 2019</time> –
+                    <time datetime="2020-01-31">Jan 2020</time>
+                  </div>
+                </div>
+              </header>
+                <p>💧 Kernel space driver for Bosch Sensortec BME280 – combined temperature, pressure, humidity sensor. The driver allows using the sensor over I2C bus on a single-board computer like Raspberry Pi, Orange Pi, Asus Tinker Board, etc.</p>
+    <p>🛠️ Technologies &amp; Environment: C, Make, Markdown, clang-format, markdownlint, Linux, Linux Kernel, BME280, Raspberry Pi, Asus Tinker Board, Git, GitHub, GitHub Actions.</p>
+            </article>
+        </div>
+      </section>
+      <section id="awards">
+        <h3>Awards</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <h4>Master&#x27;s diploma with honours</h4>
+                <div class="meta">
+                    <div>
+                      Awarded by <strong>National Technical University &quot;Kharkiv Polytechnic Institute&quot;</strong>
+                    </div>
+                    <time datetime="2021-12-31">Dec 2021</time>
+                </div>
+              </header>
+            </article>
+            <article>
+              <header>
+                <h4>Bachelor&#x27;s diploma with honors</h4>
+                <div class="meta">
+                    <div>
+                      Awarded by <strong>National Technical University &quot;Kharkiv Polytechnic Institute&quot;</strong>
+                    </div>
+                    <time datetime="2020-06-30">Jun 2020</time>
+                </div>
+              </header>
+            </article>
+            <article>
+              <header>
+                <h4>2nd pace in the RoboRace Competition</h4>
+                <div class="meta">
+                    <div>
+                      Awarded by <strong>Lviv Polytechnic National University</strong>
+                    </div>
+                    <time datetime="2019-10-31">Oct 2019</time>
+                </div>
+              </header>
+                <p>🔗 See more: www.kpi.kharkov.ua/rus/2019/10/30/harkivski-politehniky-sribni-pryzery</p>
+            </article>
+            <article>
+              <header>
+                <h4>1st place in the Line Following Competition</h4>
+                <div class="meta">
+                    <div>
+                      Awarded by <strong>National Technical University &quot;Kharkiv Polytechnic Institute&quot;</strong>
+                    </div>
+                    <time datetime="2019-04-30">Apr 2019</time>
+                </div>
+              </header>
+                <p>🔗 See more: www.kpi.kharkov.ua/rus/2019/04/22/olimpiady-robotiv</p>
+            </article>
+            <article>
+              <header>
+                <h4>3rd place in the RoboSumo Competition</h4>
+                <div class="meta">
+                    <div>
+                      Awarded by <strong>National Technical University &quot;Kharkiv Polytechnic Institute&quot;</strong>
+                    </div>
+                    <time datetime="2019-04-30">Apr 2019</time>
+                </div>
+              </header>
+                <p>🔗 See more: www.kpi.kharkov.ua/rus/2019/04/22/olimpiady-robotiv</p>
+            </article>
+        </div>
+      </section>
+      <section id="publications">
+        <h3>Publications</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <h4>Research of data transmission protocols in the conditions of the Internet of Things</h4>
+                <div class="meta">
+                    <time datetime="2021-11-22">Nov 2021</time>
+                </div>
+              </header>
+            </article>
+            <article>
+              <header>
+                <h4>Analytical overview and comparison of modern JavaScript solutions for web application development</h4>
+                <div class="meta">
+                    <time datetime="2021-11-26">Nov 2021</time>
+                </div>
+              </header>
+            </article>
+            <article>
+              <header>
+                <h4><a href="http://repository.kpi.kharkov.ua/bitstream/KhPI-Press/54370/1/Malokhvii_Vykorystannia_kontseptsii_2021.pdf">Using the Internet of Things concept to build a &quot;Smart Home&quot;</a></h4>
+                <div class="meta">
+                    <div>
+                      Published by <strong>National Technical University &quot;Kharkiv Polytechnic Institute&quot;</strong>
+                    </div>
+                    <time datetime="2021-09-02">Sep 2021</time>
+                </div>
+              </header>
+            </article>
+            <article>
+              <header>
+                <h4><a href="http://repository.kpi.kharkov.ua/bitstream/KhPI-Press/54369/1/Malokhvii_Vykorystannia_protokolu_2021.pdf">Using the MQTT protocol in a limited bandwidth environment for the Internet of Things</a></h4>
+                <div class="meta">
+                    <div>
+                      Published by <strong>National Technical University &quot;Kharkiv Polytechnic Institute&quot;</strong>
+                    </div>
+                    <time datetime="2021-12-14">Dec 2021</time>
+                </div>
+              </header>
+            </article>
+            <article>
+              <header>
+                <h4><a href="http://kist.ntu.edu.ua/konferencii/11_konf_2018.pdf">Shortest distance search method based on algorithm A*</a></h4>
+                <div class="meta">
+                    <div>
+                      Published by <strong>National Transport University</strong>
+                    </div>
+                    <time datetime="2018-04-26">Apr 2018</time>
+                </div>
+              </header>
+            </article>
+        </div>
+      </section>
+      <section id="skills">
+        <h3>Skills</h3>
+        <div class="grid-list">
+            <div>
+                <h4>Front-End</h4>
+                <ul class="tag-list">
+                    <li>JavaScript</li>
+                    <li>TypeScript</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>SASS</li>
+                    <li>Vue</li>
+                    <li>Vuex</li>
+                    <li>Vuetify</li>
+                    <li>Nuxt</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Back-End</h4>
+                <ul class="tag-list">
+                    <li>Python</li>
+                    <li>Flask</li>
+                    <li>FastAPI</li>
+                    <li>PostgreSQL</li>
+                    <li>REST</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Other</h4>
+                <ul class="tag-list">
+                    <li>Linux</li>
+                    <li>RouterOS</li>
+                    <li>Bash</li>
+                    <li>Git</li>
+                    <li>Docker</li>
+                    <li>Selenium</li>
+                    <li>GitHub Actions</li>
+                    <li>GitLab CI</li>
+                    <li>Netlify</li>
+                    <li>DigitalOcean</li>
+                </ul>
+            </div>
+        </div>
+      </section>
+      <section id="languages">
+        <h3>Languages</h3>
+        <div class="grid-list">
+            <div>
+                <h4>English</h4>
+              Intermediate
+            </div>
+            <div>
+                <h4>Russian</h4>
+              Native Speaker
+            </div>
+            <div>
+                <h4>Ukrainian</h4>
+              Native Speaker
+            </div>
+        </div>
+      </section>
+      <section id="interests">
+        <h3>Interests</h3>
+        <div class="grid-list">
+            <div>
+                <h4>Sport</h4>
+                <ul class="tag-list">
+                    <li>Mountain biking</li>
+                    <li>Road cycling</li>
+                    <li>Swimming</li>
+                    <li>Alpine skiing</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Other</h4>
+                <ul class="tag-list">
+                    <li>Photography</li>
+                    <li>Coffee</li>
+                    <li>Gardening</li>
+                </ul>
+            </div>
+        </div>
+      </section>
+  </body>
+</html>
