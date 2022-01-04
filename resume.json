@@ -9,7 +9,14 @@
     "location": {
       "countryCode": "UA",
       "city": "Kharkiv"
-    }
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "malokhvii-eduard",
+        "url": "https://github.com/malokhvii-eduard"
+      }
+    ]
   },
   "meta": {
     "version": "v1.0.0",
