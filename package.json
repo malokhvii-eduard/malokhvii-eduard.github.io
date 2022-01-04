@@ -1,0 +1,50 @@
+{
+  "private": true,
+  "scripts": {
+    "postinstall": "is-ci || husky install",
+    "prepare": "is-ci || husky install",
+    "serve": "resume serve",
+    "build": "mkdirp dist && resume export --theme even dist/index.html"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*.md": "markdownlint",
+    "*.json": "jsonlint -c"
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/github"
+    ],
+    "branches": [
+      "master"
+    ]
+  },
+  "dependencies": {
+    "jsonresume-theme-even": "^0.16.1",
+    "mkdirp": "^1.0.4",
+    "resume-cli": "^3.0.5"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.0.1",
+    "@commitlint/config-conventional": "^16.0.0",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^7.0.4",
+    "is-ci": "^3.0.1",
+    "jsonlint": "^1.6.3",
+    "lint-staged": "^12.1.5",
+    "markdownlint-cli": "^0.30.0",
+    "semantic-release": "^18.0.1"
+  }
+}
