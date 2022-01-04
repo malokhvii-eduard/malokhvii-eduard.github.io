@@ -110,6 +110,14 @@
       "endDate": "2020-12-31"
     }
   ],
+  "publications": [
+    {
+      "name": "Shortest distance search method based on algorithm A*",
+      "publisher": "National Transport University",
+      "releaseDate": "2018-04-26",
+      "url": "http://kist.ntu.edu.ua/konferencii/11_konf_2018.pdf"
+    }
+  ],
   "awards": [
     {
       "title": "Master's diploma with honours",
