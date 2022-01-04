@@ -112,6 +112,10 @@
   ],
   "publications": [
     {
+      "name": "Research of data transmission protocols in the conditions of the Internet of Things",
+      "releaseDate": "2021-11-22"
+    },
+    {
       "name": "Analytical overview and comparison of modern JavaScript solutions for web application development",
       "releaseDate": "2021-11-26"
     },
