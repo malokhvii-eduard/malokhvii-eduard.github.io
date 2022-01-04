@@ -112,6 +112,12 @@
   ],
   "publications": [
     {
+      "name": "Using the Internet of Things concept to build a \"Smart Home\"",
+      "publisher": "National Technical University \"Kharkiv Polytechnic Institute\"",
+      "releaseDate": "2021-09-02",
+      "url": "http://repository.kpi.kharkov.ua/bitstream/KhPI-Press/54370/1/Malokhvii_Vykorystannia_kontseptsii_2021.pdf"
+    },
+    {
       "name": "Shortest distance search method based on algorithm A*",
       "publisher": "National Transport University",
       "releaseDate": "2018-04-26",
