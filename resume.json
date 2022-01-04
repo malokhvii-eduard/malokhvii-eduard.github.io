@@ -263,6 +263,10 @@
         "Swimming",
         "Alpine skiing"
       ]
+    },
+    {
+      "name": "Other",
+      "keywords": ["Photography", "Coffee", "Gardening"]
     }
   ],
   "meta": {
