@@ -30,6 +30,13 @@
   },
   "work": [
     {
+      "name": "Self-Employed",
+      "position": "Network Engineer",
+      "startDate": "2021-10-31",
+      "endDate": "2021-10-31",
+      "summary": "🎯 Designed, configured, and installed Wi-Fi with fast, reliable internet access in a car.\n\n🎯 Configured real-time GPS tracking.\n\n🛠️ Technologies & Environment: RouterOS, WinBox, 2G, 3G, 4G, Wi-Fi 4 (802.11b/g/n), GPS, MikroTik LtAP mini LTE kit."
+    },
+    {
       "name": "ООО \"НОВТЕХПРОМ\"",
       "position": "Network Administrator",
       "startDate": "2021-06-30",
