@@ -254,6 +254,17 @@
       "description": "💧 Kernel space driver for Bosch Sensortec BME280 – combined temperature, pressure, humidity sensor. The driver allows using the sensor over I2C bus on a single-board computer like Raspberry Pi, Orange Pi, Asus Tinker Board, etc.\n\n🛠️ Technologies & Environment: C, Make, Markdown, clang-format, markdownlint, Linux, Linux Kernel, BME280, Raspberry Pi, Asus Tinker Board, Git, GitHub, GitHub Actions."
     }
   ],
+  "interests": [
+    {
+      "name": "Sport",
+      "keywords": [
+        "Mountain biking",
+        "Road cycling",
+        "Swimming",
+        "Alpine skiing"
+      ]
+    }
+  ],
   "meta": {
     "version": "v1.0.0",
     "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
