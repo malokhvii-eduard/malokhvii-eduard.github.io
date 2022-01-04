@@ -31,6 +31,13 @@
   "work": [
     {
       "name": "Self-Employed",
+      "position": "Network Engineer",
+      "startDate": "2021-03-31",
+      "endDate": "2021-03-31",
+      "summary": "🎯 Designed, configured, and installed a robust Wi-Fi in a cottage.\n\n🎯 Configured roaming between access points.\n\n🛠️ Technologies & Environment: RouterOS, WinBox, CAPsMAN, Wi-Fi 4 (802.11b/g/n), Wi-Fi 5 (802.11a/n/ac), MikroTik RB951G-2HnD, MikroTik cAP lite, MikroTik cAP ac."
+    },
+    {
+      "name": "Self-Employed",
       "position": "Full Stack Developer",
       "startDate": "2021-02-28",
       "endDate": "2021-02-28",
