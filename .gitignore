@@ -1,0 +1,9 @@
+.idea
+.vscode
+*.code-workspace
+dist
+public
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
