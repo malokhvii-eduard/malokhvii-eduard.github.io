@@ -232,7 +232,7 @@
       "startDate": "2021-12-01",
       "endDate": "2022-01-12",
       "url": "https://github.com/malokhvii-eduard/olx-crawler",
-      "description": "🤖 An easy-to-use, powerful crawler for OLX, that allows collecting various non-sensitivity data about ads on the site.\n\n🛠️ Technologies & Environment: Python, Selenium, click, tqdm, inject, pre-commit, markdownlint, commitlint, black, flake8, bandit, isort, Git, GitHub."
+      "description": "🤖 An easy-to-use, powerful crawler for OLX, that allows collecting various non-sensitive data about ads on the site.\n\n🛠️ Technologies & Environment: Python, Selenium, click, tqdm, inject, pre-commit, markdownlint, commitlint, black, flake8, bandit, isort, Git, GitHub."
     },
     {
       "name": "airly",
