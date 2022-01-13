@@ -221,6 +221,20 @@
   ],
   "projects": [
     {
+      "name": "bulk-sms",
+      "startDate": "2022-01-10",
+      "endDate": "2022-01-12",
+      "url": "https://github.com/malokhvii-eduard/bulk-sms",
+      "description": "📮 A simple tool to send SMS messages over the carrier's network from an Android phone using the Android Debug Bridge.\n\n🛠️ Technologies & Environment: Python, androidviewclient, click, tqdm, pre-commit, markdownlint, commitlint, black, flake8, bandit, isort, Git, GitHub."
+    },
+    {
+      "name": "olx-crawler",
+      "startDate": "2021-12-01",
+      "endDate": "2022-01-12",
+      "url": "https://github.com/malokhvii-eduard/olx-crawler",
+      "description": "🤖 An easy-to-use, powerful crawler for OLX, that allows collecting various non-sensitivity data about ads on the site.\n\n🛠️ Technologies & Environment: Python, Selenium, click, tqdm, inject, pre-commit, markdownlint, commitlint, black, flake8, bandit, isort, Git, GitHub."
+    },
+    {
       "name": "airly",
       "startDate": "2021-11-30",
       "endDate": "2021-12-31",
@@ -247,13 +261,6 @@
       "endDate": "2020-12-31",
       "url": "https://github.com/malokhvii-eduard/mod3d",
       "description": "🎨 A simple 3D editor, that allows wrapping a 3D model into a texture. As a texture, there could be used UV mappings, images, or figures.\n\n🛠️ Technologies & Environment: JavaScript, Babel, HTML5, Sass, Vue.js, Vuex, Vuetify, WebGL, Three.js, IndexedDB, Markdown, yarn, commitizen, husky, lint-staged, webpack, Prettier, ESLint, stylelint, commitlint, markdownlint, PostCSS, PurgeCSS, LQIP, Material Design, Material Design Icons, Simple Icons, PWA, Netlify, Blender, Git, GitHub, GitHub Actions."
-    },
-    {
-      "name": "olx-crawler",
-      "startDate": "2021-12-01",
-      "endDate": "2022-01-12",
-      "url": "https://github.com/malokhvii-eduard/olx-crawler",
-      "description": "🤖 An easy-to-use, powerful crawler for OLX, that allows collecting various non-sensitivity data about ads on the site.\n\n🛠️ Technologies & Environment: Python, Selenium, click, tqdm, inject, pre-commit, markdownlint, commitlint, black, flake8, bandit, isort, Git, GitHub."
     },
     {
       "name": "lkmod-bme280",
