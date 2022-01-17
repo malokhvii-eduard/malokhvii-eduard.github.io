@@ -66,7 +66,7 @@
       "position": "Full Stack Developer",
       "startDate": "2021-02-01",
       "endDate": "2021-02-28",
-      "summary": "🎯 Developed a small multi-language site with serverless architecture.\n\n🎯 Configured custom events for Google Analytics UA/4.\n\n🎯 Configured basic CI/CD.\n\n🎯 Achieved a good score on Google Lighthouse.\n\n🎯 Added metadata for Open Graph protocol, Twitter Cards, Schema.org.\n\n🛠️ Technologies & Environment: JavaScript, Babel, HTML5, Sass, Vue.js, Vuex, Nuxt.js, Vuetify, sal.js, ky, Markdown, npm, commitizen, husky, lint-staged, webpack, ESLint, Prettier, commitlint, stylelint, PostCSS, PurgeCSS, LQIP, Material Design, Material Design Icons, Simple Icons, PWA, Netlify, Google Tag Manager, Google Analytics, Google Search Console, Git, GitHub, GitHub Actions.\n\n🔗 See site: el-logistics.com.ua"
+      "summary": "🎯 Developed a small multi-language site with serverless architecture.\n\n🎯 Configured custom events for Google Analytics UA/4.\n\n🎯 Configured basic CI/CD.\n\n🎯 Achieved a good score on Google Lighthouse.\n\n🎯 Added metadata for Open Graph protocol, Twitter Cards, Schema.org.\n\n🛠️ Technologies & Environment: JavaScript, Babel, HTML5, Sass, Vue.js, Vuex, Nuxt.js, Vuetify, sal.js, ky, npm, husky, webpack, ESLint, PostCSS, PurgeCSS, LQIP, PWA, Netlify, Google Tag Manager, Google Analytics, Google Search Console, Git, GitHub, GitHub Actions.\n\n🔗 See site: el-logistics.com.ua"
     },
     {
       "name": "Self-Employed",
@@ -82,7 +82,7 @@
       "endDate": "2020-12-31",
       "location": "Kharkiv, Ukraine",
       "url": "https://www.linkedin.com/company/tenviz",
-      "summary": "🎯 Developed parsers and crawlers for: investing.com, ishares.com, barchart.com, yahoo.com.\n\n🎯 Developed a fully automated system for creating screenshots of charts for financial reports.\n\n🎯 Developed a service for automated configuration, management, and coordination of Tor proxies.\n\n🎯 Improved performance and quality of various parsers and web crawlers.\n\n🎯 Multitude of bug fixes including emergency cases.\n\n🛠️ Technologies & Environment: Python, PostgreSQL, Selenium, Flask, Swagger, REST, Docker, docker-compose, Markdown, pandas, psycopg2, asyncio, asyncpg, beautifulsoup4, requests, lxml, multiprocessing, Linux, Git, GitLab."
+      "summary": "🎯 Developed parsers and crawlers for: investing.com, ishares.com, barchart.com, yahoo.com.\n\n🎯 Developed a fully automated system for creating screenshots of charts for financial reports.\n\n🎯 Developed a service for automated configuration, management, and coordination of Tor proxies.\n\n🎯 Improved performance and quality of various parsers and web crawlers.\n\n🎯 Multitude of bug fixes including emergency cases.\n\n🛠️ Technologies & Environment: Python, PostgreSQL, Selenium, Flask, Swagger, REST, Docker, docker-compose, click, pandas, psycopg2, asyncio, asyncpg, beautifulsoup4, requests, lxml, multiprocessing, Linux, Git, GitLab."
     },
     {
       "name": "GlobalLogic",
@@ -225,49 +225,49 @@
       "startDate": "2022-01-10",
       "endDate": "2022-01-12",
       "url": "https://github.com/malokhvii-eduard/bulk-sms",
-      "description": "📮 A simple tool to send SMS messages over the carrier's network from an Android phone using the Android Debug Bridge.\n\n🛠️ Technologies & Environment: Python, androidviewclient, click, tqdm, pre-commit, markdownlint, commitlint, black, flake8, bandit, isort, Git, GitHub."
+      "description": "📮 A simple tool to send SMS messages over the carrier's network from an Android phone using the Android Debug Bridge.\n\n🛠️ Technologies & Environment: Python, androidviewclient, click, tqdm, pre-commit, Git, GitHub."
     },
     {
       "name": "olx-crawler",
       "startDate": "2021-12-01",
       "endDate": "2022-01-12",
       "url": "https://github.com/malokhvii-eduard/olx-crawler",
-      "description": "🤖 An easy-to-use, powerful crawler for OLX, that allows collecting various non-sensitive data about ads on the site.\n\n🛠️ Technologies & Environment: Python, Selenium, click, tqdm, inject, pre-commit, markdownlint, commitlint, black, flake8, bandit, isort, Git, GitHub."
+      "description": "🤖 An easy-to-use, powerful crawler for OLX, that allows collecting various non-sensitive data about ads on the site.\n\n🛠️ Technologies & Environment: Python, Selenium, click, tqdm, inject, pre-commit, Git, GitHub."
     },
     {
       "name": "airly",
       "startDate": "2021-11-30",
       "endDate": "2021-12-31",
       "url": "https://github.com/malokhvii-eduard/airly",
-      "description": "💨 A collection of tiny and ultra-cheap web things for monitoring air quality. The devices measure: temperature, humidity, barometric pressure, the concentration of carbon dioxide, dew point. The devices easily integrate into the Web of Things ecosystem and can be used indoor or outdoor.\n\n🛠️ Technologies & Environment: Markdown, C++, PlatformIO, Arduino, WebThings, npm, commitizen, husky, lint-staged, clang-format, Prettier, markdownlint, commitlint, sematic-release, UART, I2C, SPI, BME280, MH-Z19, ESP8266, WeMos D1, Git, GitHub, GitHub Actions."
+      "description": "💨 A collection of tiny and ultra-cheap web things for monitoring air quality. The devices measure: temperature, humidity, barometric pressure, the concentration of carbon dioxide, dew point. The devices easily integrate into the Web of Things ecosystem and can be used indoor or outdoor.\n\n🛠️ Technologies & Environment: Markdown, C++, PlatformIO, Arduino, WebThings, npm, husky, clang-format, sematic-release, UART, I2C, SPI, BME280, MH-Z19, ESP8266, WeMos D1, Git, GitHub, GitHub Actions."
     },
     {
       "name": "arduino-bme280",
       "startDate": "2021-10-31",
       "endDate": "2021-12-31",
       "url": "https://github.com/malokhvii-eduard/arduino-bme280",
-      "description": "💧 Arduino library for Bosch Sensortec BME280 – combined temperature, pressure, humidity sensor. The library allows using the sensor over I2C or SPI on any board that supports Arduino.\n\n🛠️ Technologies & Environment: C++, PlatformIO, Arduino, Markdown, googletest, gcovr, npm, commitizen, husky, lint-staged, clang-format, Prettier, markdownlint, commitlint, sematic-release, I2C, SPI, BME280, Git, GitHub, GitHub Actions."
+      "description": "💧 Arduino library for Bosch Sensortec BME280 – combined temperature, pressure, humidity sensor. The library allows using the sensor over I2C or SPI on any board that supports Arduino.\n\n🛠️ Technologies & Environment: C++, PlatformIO, Arduino, googletest, npm, husky, clang-format, sematic-release, I2C, SPI, BME280, Git, GitHub, GitHub Actions."
     },
     {
       "name": "arduino-mhz19",
       "startDate": "2021-10-31",
       "endDate": "2021-12-31",
       "url": "https://github.com/malokhvii-eduard/arduino-mhz19",
-      "description": "💥 Arduino library for Winsen MH-Z19 – infrared carbon dioxide sensor. The library allows using the sensor over hardware or software UART on any board that supports Arduino.\n\n🛠️ Technologies & Environment: C++, PlatformIO, Arduino, Markdown, googletest, gcovr, npm, commitizen, husky, lint-staged, clang-format, Prettier, markdownlint, commitlint, sematic-release, UART, MH-Z19, Git, GitHub, GitHub Actions."
+      "description": "💥 Arduino library for Winsen MH-Z19 – infrared carbon dioxide sensor. The library allows using the sensor over hardware or software UART on any board that supports Arduino.\n\n🛠️ Technologies & Environment: C++, PlatformIO, Arduino, googletest, npm, husky, clang-format, sematic-release, UART, MH-Z19, Git, GitHub, GitHub Actions."
     },
     {
       "name": "mod3d",
       "startDate": "2020-12-01",
       "endDate": "2020-12-31",
       "url": "https://github.com/malokhvii-eduard/mod3d",
-      "description": "🎨 A simple 3D editor, that allows wrapping a 3D model into a texture. As a texture, there could be used UV mappings, images, or figures.\n\n🛠️ Technologies & Environment: JavaScript, Babel, HTML5, Sass, Vue.js, Vuex, Vuetify, WebGL, Three.js, IndexedDB, Markdown, yarn, commitizen, husky, lint-staged, webpack, Prettier, ESLint, stylelint, commitlint, markdownlint, PostCSS, PurgeCSS, LQIP, Material Design, Material Design Icons, Simple Icons, PWA, Netlify, Blender, Git, GitHub, GitHub Actions."
+      "description": "🎨 A simple 3D editor, that allows wrapping a 3D model into a texture. As a texture, there could be used UV mappings, images, or figures.\n\n🛠️ Technologies & Environment: JavaScript, Babel, HTML5, Sass, Vue.js, Vuex, Vuetify, WebGL, Three.js, IndexedDB, yarn, husky, webpack, ESLint, PostCSS, PurgeCSS, LQIP, PWA, Netlify, Blender, Git, GitHub, GitHub Actions."
     },
     {
       "name": "lkmod-bme280",
       "startDate": "2019-12-31",
       "endDate": "2020-01-31",
       "url": "https://github.com/malokhvii-eduard/lkmod-bme280",
-      "description": "💧 Kernel space driver for Bosch Sensortec BME280 – combined temperature, pressure, humidity sensor. The driver allows using the sensor over I2C bus on a single-board computer like Raspberry Pi, Orange Pi, Asus Tinker Board, etc.\n\n🛠️ Technologies & Environment: C, Make, Markdown, clang-format, pre-commit, markdownlint, commitlint, Linux, Linux Kernel, BME280, Raspberry Pi, Asus Tinker Board, Git, GitHub."
+      "description": "💧 Kernel space driver for Bosch Sensortec BME280 – combined temperature, pressure, humidity sensor. The driver allows using the sensor over I2C bus on a single-board computer like Raspberry Pi, Orange Pi, Asus Tinker Board, etc.\n\n🛠️ Technologies & Environment: C, Make, clang-format, pre-commit, Linux, Linux Kernel, BME280, Raspberry Pi, Asus Tinker Board, Git, GitHub."
     }
   ],
   "interests": [
