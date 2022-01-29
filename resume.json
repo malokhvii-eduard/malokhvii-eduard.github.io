@@ -178,14 +178,13 @@
         "CSS3",
         "SASS",
         "Vue.js",
-        "Vuex",
         "Vuetify",
         "Nuxt.js"
       ]
     },
     {
       "name": "Back-End",
-      "keywords": ["Python", "Flask", "FastAPI", "PostgreSQL", "REST"]
+      "keywords": ["Python", "FastAPI", "Flask", "SQLAlchemy", "PostgreSQL"]
     },
     {
       "name": "Other",
