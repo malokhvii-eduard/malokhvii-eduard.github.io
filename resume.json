@@ -183,7 +183,14 @@
     },
     {
       "name": "Back-End",
-      "keywords": ["Python", "FastAPI", "Flask", "SQLAlchemy", "PostgreSQL"]
+      "keywords": [
+        "Python",
+        "FastAPI",
+        "Flask",
+        "SQLAlchemy",
+        "Celery",
+        "PostgreSQL"
+      ]
     },
     {
       "name": "Other",
