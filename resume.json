@@ -29,6 +29,13 @@
   },
   "work": [
     {
+      "name": "GlobalLogic",
+      "position": "Middle Full Stack Developer",
+      "startDate": "2022-03-01",
+      "location": "Lviv, Ukraine",
+      "url": "https://www.linkedin.com/company/globallogic"
+    },
+    {
       "name": "Techstack Ltd",
       "position": "Python Developer",
       "startDate": "2021-12-01",
