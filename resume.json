@@ -2,8 +2,8 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Eduard Malokhvii",
-    "label": "Full Stack Developer",
-    "summary": "🐍 Full Stack Developer with 3 years of wide knowledge in Python, Back-end Development, Web Scraping, Containerisation areas with strong experience in Vue.js, Front-end Development, CI/CD, Networking. 🎓 BA & MA in Computer Engineering. 🚵🏊 Active sport participant, ☕️ coffee adept, 📷 photography enthusiast.",
+    "label": "Software Engineer",
+    "summary": "🐍 Software Engineer with 3 years of wide knowledge in Python, Back-end Development, Web Scraping, Containerisation areas with strong experience in Vue.js, Front-end Development, CI/CD, Networking. 🎓 BA & MA in Computer Engineering. 🚵🏊 Active sport participant, ☕️ coffee adept, 📷 photography enthusiast.",
     "email": "malokhvii.ee@gmail.com",
     "location": {
       "countryCode": "UA",
