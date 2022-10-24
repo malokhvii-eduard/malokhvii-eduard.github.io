@@ -186,7 +186,7 @@
       "keywords": [
         "Python",
         "FastAPI",
-        "Flask",
+        "Django",
         "SQLAlchemy",
         "Celery",
         "PostgreSQL"
