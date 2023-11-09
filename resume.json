@@ -30,8 +30,16 @@
   "work": [
     {
       "name": "GlobalLogic",
+      "position": "Senior Software Engineer",
+      "startDate": "2023-11-01",
+      "location": "Lviv, Ukraine",
+      "url": "https://www.linkedin.com/company/globallogic"
+    },
+    {
+      "name": "GlobalLogic",
       "position": "Software Engineer",
       "startDate": "2022-03-01",
+      "endDate": "2023-11-01",
       "location": "Lviv, Ukraine",
       "url": "https://www.linkedin.com/company/globallogic"
     },
