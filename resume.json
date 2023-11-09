@@ -97,9 +97,16 @@
     {
       "institution": "National Technical University \"Kharkiv Polytechnic Institute\"",
       "area": "Computer Engineering",
+      "studyType": "Doctor of Philosophy - PhD",
+      "startDate": "2023-10-01",
+      "endDate": "2027-01-01"
+    },
+    {
+      "institution": "National Technical University \"Kharkiv Polytechnic Institute\"",
+      "area": "Computer Engineering",
       "studyType": "Master's degree",
       "startDate": "2020-09-30",
-      "endDate": "2021-12-31"
+      "endDate": "2027-12-31"
     },
     {
       "institution": "National Technical University \"Kharkiv Polytechnic Institute\"",
