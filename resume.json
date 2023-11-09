@@ -184,7 +184,7 @@
   ],
   "skills": [
     {
-      "name": "Front-End",
+      "name": "Frontend",
       "keywords": [
         "JavaScript",
         "TypeScript",
@@ -197,7 +197,7 @@
       ]
     },
     {
-      "name": "Back-End",
+      "name": "Backend",
       "keywords": [
         "Python",
         "FastAPI",
@@ -209,7 +209,7 @@
       ]
     },
     {
-      "name": "Other",
+      "name": "Others",
       "keywords": [
         "Linux",
         "RouterOS",
