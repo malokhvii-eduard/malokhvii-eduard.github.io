@@ -241,6 +241,13 @@
   ],
   "projects": [
     {
+      "name": "raid",
+      "startDate": "2022-11-01",
+      "endDate": "2022-11-03",
+      "url": "https://github.com/malokhvii-eduard/raid",
+      "description": "📢 A simple tool to get immediate notifications in Slack once your Ukrainian colleagues become unavailable due to an air raid or artillery shelling threats.\n\n🛠️ Technologies & Environment: Python, Typer, pre-commit, sematic-release, Git, GitHub, GitHub Actions."
+    },
+    {
       "name": "bulk-sms",
       "startDate": "2022-01-10",
       "endDate": "2022-01-12",
