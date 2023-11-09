@@ -202,6 +202,7 @@
         "Python",
         "FastAPI",
         "Django",
+        "Flask",
         "SQLAlchemy",
         "Celery",
         "PostgreSQL"
