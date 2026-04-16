@@ -91,6 +91,18 @@
   ],
   "publications": [
     {
+      "name": "Integration of IoT with Cloud, Fog, and Edge computing: A Review",
+      "publisher": "Journal Advanced Information Systems, Vol. 8, No. 2",
+      "releaseDate": "2024-06-04",
+      "url": "https://ais.khpi.edu.ua/article/view/305471"
+    },
+    {
+      "name": "Features of Using Cloud, Fog, and Edge Computing in the Industrial Internet of Things",
+      "publisher": "XI International Scientific and Technical Conference",
+      "releaseDate": "2024-05-09",
+      "url": "https://repository.kpi.kharkov.ua/items/5cb919c3-9bbd-45d6-9587-fc19f1809dd5"
+    },
+    {
       "name": "A review of issues in integrating the Internet of Things with Cloud, Fog, and Edge computing",
       "publisher": "XIV International Scientific and Technical Conference, Vol. 1, p. 136",
       "releaseDate": "2024-04-25",
