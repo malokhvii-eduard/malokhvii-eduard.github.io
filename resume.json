@@ -91,6 +91,12 @@
   ],
   "publications": [
     {
+      "name": "A review of issues in integrating the Internet of Things with Cloud, Fog, and Edge computing",
+      "publisher": "XIV International Scientific and Technical Conference, Vol. 1, p. 136",
+      "releaseDate": "2024-04-25",
+      "url": "https://nure.ua/wp-content/uploads/2024/tom_1_ict_2024.pdf"
+    },
+    {
       "name": "The utilization of ExpressLRS for constructing high-performance long-range radio communication with low latency",
       "publisher": "XVII International Scientific and Practical Student Conference for Master's and PhD Students",
       "releaseDate": "2023-12-01",
