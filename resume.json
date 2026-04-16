@@ -84,7 +84,7 @@
       "endDate": "2021-01-31",
       "location": "Kharkiv, Ukraine",
       "url": "https://www.linkedin.com/company/tenviz",
-      "summary": "🎯 Developed parsers and crawlers for: investing.com, ishares.com, barchart.com, yahoo.com.\n\n🎯 Developed a fully automated system for creating screenshots of charts for financial reports.\n\n🎯 Developed a service for automated configuration, management, and coordination of Tor proxies.\n\n🎯 Improved performance and quality of various parsers and web crawlers.\n\n🎯 Multitude of bug fixes including emergency cases.\n\n🛠️ Technologies & Environment: Python, PostgreSQL, Selenium, Flask, Swagger, REST, Docker, docker-compose, click, pandas, psycopg2, asyncio, asyncpg, beautifulsoup4, requests, lxml, multiprocessing, Linux, Git, GitLab."
+      "summary": "🎯 Developed and maintained high-performance web scrapers and crawlers for financial platforms (investing.com, ishares.com, barchart.com, yahoo.com), ensuring reliable data extraction at scale.\n\n🎯 Designed and implemented a fully automated system for generating chart screenshots used in financial reporting workflows.\n\n🎯 Built a service for automated configuration, management, and orchestration of Tor proxies to support distributed and fault-tolerant scraping.\n\n🎯 Improved performance, stability, and data quality across scraping pipelines through optimization and refactoring.\n\n🎯 Resolved critical bugs and production issues, including high-priority incidents.\n\n🛠️ Technologies & Environment: Python, PostgreSQL, Selenium, Flask, Swagger, REST, Docker, docker-compose, click, pandas, psycopg2, asyncio, asyncpg, beautifulsoup4, requests, lxml, multiprocessing, Linux, Git, GitLab."
     },
     {
       "name": "GlobalLogic",
