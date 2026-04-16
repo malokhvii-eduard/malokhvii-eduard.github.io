@@ -92,27 +92,31 @@
   "publications": [
     {
       "name": "Research of data transmission protocols in the conditions of the Internet of Things",
-      "releaseDate": "2021-11-22"
+      "publisher": "Control, Navigation, and Communication Systems: Collection of Scientific Papers, Vol. 1, No. 67",
+      "releaseDate": "2021-11-22",
+      "url": "https://journals.nupp.edu.ua/sunz/en/article/view/2446/1915"
     },
     {
       "name": "Analytical overview and comparison of modern JavaScript solutions for web application development",
-      "releaseDate": "2021-11-26"
+      "publisher": "Control, Navigation, and Communication Systems: Collection of Scientific Papers, Vol. 4, No. 66",
+      "releaseDate": "2021-11-26",
+      "url": "https://journals.nupp.edu.ua/sunz/en/article/view/2421/1891"
     },
     {
       "name": "Using the Internet of Things concept to build a \"Smart Home\"",
-      "publisher": "National Technical University \"Kharkiv Polytechnic Institute\"",
+      "publisher": "XI International Scientific and Technical Conference",
       "releaseDate": "2021-09-02",
       "url": "http://repository.kpi.kharkov.ua/bitstream/KhPI-Press/54370/1/Malokhvii_Vykorystannia_kontseptsii_2021.pdf"
     },
     {
       "name": "Using the MQTT protocol in a limited bandwidth environment for the Internet of Things",
-      "publisher": "National Technical University \"Kharkiv Polytechnic Institute\"",
+      "publisher": "XI International Scientific and Technical Conference",
       "releaseDate": "2021-12-14",
       "url": "http://repository.kpi.kharkov.ua/bitstream/KhPI-Press/54369/1/Malokhvii_Vykorystannia_protokolu_2021.pdf"
     },
     {
       "name": "Shortest distance search method based on algorithm A*",
-      "publisher": "National Transport University",
+      "publisher": "VIII International Scientific and Technical Conference",
       "releaseDate": "2018-04-26",
       "url": "http://kist.ntu.edu.ua/konferencii/11_konf_2018.pdf"
     }
