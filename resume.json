@@ -91,6 +91,12 @@
   ],
   "publications": [
     {
+      "name": "Multi-Objective Framework for End-Device Processing and Offloading in Industrial IoT",
+      "publisher": "Journal Advanced Information Systems, Vol. 10, No. 2",
+      "releaseDate": "2026-04-03",
+      "url": "https://ais.khpi.edu.ua/article/view/356642"
+    },
+    {
       "name": "Differential Evolution for Optimized Task Clustering and Scheduling in IoT Edge Computing",
       "publisher": "2025 IEEE 6th KhPI Week on Advanced Technology",
       "releaseDate": "2025-10-06",
