@@ -91,6 +91,12 @@
   ],
   "publications": [
     {
+      "name": "Differential Evolution for Optimized Task Clustering and Scheduling in IoT Edge Computing",
+      "publisher": "2025 IEEE 6th KhPI Week on Advanced Technology",
+      "releaseDate": "2025-10-06",
+      "url": "https://ieeexplore.ieee.org/abstract/document/11288695"
+    },
+    {
       "name": "Adaptive Filtering and Dynamic Computation Offloading for Resilient Task Execution in IIoT",
       "publisher": "Journal of Control Navigation and Communication Systems, Vol. 3, No. 81",
       "releaseDate": "2025-09-30",
