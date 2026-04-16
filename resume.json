@@ -91,6 +91,12 @@
   ],
   "publications": [
     {
+      "name": "Integration of Trust Mechanisms and Dynamic Task Management for Resource Allocation Optimization in Fog Computing for the Internet of Things",
+      "publisher": "XVIII International Scientific and Practical Student Conference for Master's and PhD Students",
+      "releaseDate": "2024-11-09",
+      "url": "https://repository.kpi.kharkov.ua/items/cee7e44a-0925-4b46-900b-e65819d29ff1"
+    },
+    {
       "name": "Integration of IoT with Cloud, Fog, and Edge computing: A Review",
       "publisher": "Journal Advanced Information Systems, Vol. 8, No. 2",
       "releaseDate": "2024-06-04",
