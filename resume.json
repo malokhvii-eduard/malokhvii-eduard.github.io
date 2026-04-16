@@ -152,13 +152,11 @@
       "name": "Frontend",
       "keywords": [
         "JavaScript",
-        "TypeScript",
-        "HTML5",
-        "CSS3",
-        "SASS",
         "Vue.js",
         "Vuetify",
-        "Nuxt.js"
+        "Nuxt.js",
+        "ApexCharts.js",
+        "amCharts 5"
       ]
     },
     {
@@ -167,27 +165,34 @@
         "Python",
         "FastAPI",
         "Django",
+        "Django REST Framework",
         "Flask",
-        "SQLAlchemy",
         "Celery",
-        "PostgreSQL"
+        "SQLAlchemy",
+        "Pydantic",
+        "asyncio",
+        "pandas",
+        "pytest",
+        "PostgreSQL",
+        "Redis",
+        "RabbitMQ",
+        "Elasticsearch"
       ]
     },
     {
       "name": "Others",
       "keywords": [
-        "Linux",
-        "RouterOS",
-        "C",
-        "C++",
-        "Bash",
-        "Git",
         "Docker",
+        "Docker Compose",
+        "Linux",
+        "Github Actions",
+        "GitLab CI/CD",
+        "LLMs",
+        "Web Scraping",
+        "Playwright",
         "Selenium",
-        "GitHub Actions",
-        "GitLab CI",
-        "Netlify",
-        "DigitalOcean"
+        "C",
+        "C++"
       ]
     }
   ],
