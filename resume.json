@@ -91,6 +91,12 @@
   ],
   "publications": [
     {
+      "name": "Optimization of Resource Allocation in Fog Computing for IoT through Integration of Trust Mechanisms and Dynamic Task Management",
+      "publisher": "XII International Scientific and Technical Conference \"Informatics, Control and Artificial Intelligence\"",
+      "releaseDate": "2025-05-14",
+      "url": "https://repository.kpi.kharkov.ua/items/4f36cec0-1e8d-47a3-80ff-0a345007c43c"
+    },
+    {
       "name": "Differential Evolution for Optimized Task Clustering and Scheduling in IoT Edge Computing",
       "publisher": "XXXIII International Scientific and Practical Conference \"Information Technologies: Science, Engineering, Technology, Education, Health\"",
       "releaseDate": "2025-05-14",
