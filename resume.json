@@ -36,7 +36,8 @@
       "startDate": "2022-03-01",
       "endDate": "2023-11-01",
       "location": "Lviv, Ukraine",
-      "url": "https://www.linkedin.com/company/globallogic"
+      "url": "https://www.linkedin.com/company/globallogic",
+      "summary": "🎯 Redesigned legacy product pages, improving user experience through user feedback analysis and client collaboration, resulting in increased engagement, retention, and revenue.\n\n🎯 Contributed to the development of analytical models and a configurable analytics processing system, enabling parameterized model execution over custom datasets (e.g., transaction samples) with support for both on-demand and scheduled runs, powering data-driven features and business insights.\n\n🎯 Implemented integrations with external advertising platforms (Google Ads, Facebook, TikTok, InforUMobile), collaborating with clients to define requirements, working with platform APIs, and building scalable solutions capable of handling high-load scenarios.\n\n🎯 Designed and implemented core backend and frontend components, including a notification system and third-party integrations, improving system reliability and expanding product capabilities.\n\n🎯 Collaborated closely with customers to align technical solutions with business needs and ensure successful delivery of product features.\n\n🛠️ Technologies & Environment: Python, FastAPI, Django, Django REST Framework, Celery, asyncio, asyncpg, pandas, PostgreSQL, RabbitMQ, Redis, JavaScript, Bootstrap 4, CSS, ApexCharts.js, amCharts 4/5, leaflet.js, D3.js, Docker, Linux, Git, GitLab, GitLab CI."
     },
     {
       "name": "Self-Employed",
