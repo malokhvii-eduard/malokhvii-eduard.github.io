@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Eduard Malokhvii</title>
+      <meta name="description" content="🐍 Software Engineer with 6+ years of experience in Python, backend development, web scraping, and containerization, with strong experience in Vue.js, frontend development, CI/CD, and networking. 🎓 BA &amp;amp; MA in Computer Engineering. 🚀 Outside of work: ☕ coffee, 📷 photography, and 🛸 FPV drones.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap">
+    <style>:root {
+  color-scheme: light dark;
+
+  --color-background: #ffffff; /* White */
+  --color-muted: #f3f4f5; /* Light Gray 200 */
+  --color-primary: #191e23; /* Dark Gray 900 */
+  --color-secondary: #6c7781; /* Dark Gray 300 */
+  --color-accent: #ffb900; /* Accent Yellow */
+  --color-link: #46b450; /* Accent Green */
+
+  --scale-ratio: 1.25;
+  --scale0: 1rem;
+  --scale1: calc(var(--scale0) * var(--scale-ratio));
+  --scale2: calc(var(--scale1) * var(--scale-ratio));
+  --scale3: calc(var(--scale2) * var(--scale-ratio));
+  --scale4: calc(var(--scale3) * var(--scale-ratio));
+  --scale5: calc(var(--scale4) * var(--scale-ratio));
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #191e23; /* Dark Gray 900 */
+    --color-muted: #23282d; /* Dark Gray 800 */
+    --color-primary: #fbfbfc; /* Light Gray 100 */
+    --color-secondary: #ccd0d4; /* Light Gray 700 */
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-primary);
+  display: grid;
+  font: 1em/1.5 Lato, sans-serif;
+  gap: 2em;
+  grid-template-columns:
+    [full-start]
+    1fr
+    [main-start side-start]
+    minmax(min-content, 12em)
+    [side-end content-start]
+    minmax(min-content, 36em)
+    [main-end content-end]
+    1fr
+    [full-end];
+  grid-template-rows: auto [content] 0;
+  margin-bottom: 4em;
+}
+
+body::before {
+  content: '';
+  grid-column: full;
+  grid-row: content;
+}
+
+ol,
+ul {
+  padding-left: 1em;
+}
+
+li + li {
+  margin-top: 0.4em;
+}
+
+li::marker,
+.network {
+  color: var(--color-secondary);
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:focus,
+a:hover {
+  color: var(--color-accent);
+}
+
+h1,
+h2,
+h3,
+h5 {
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: var(--scale5);
+}
+
+h2 {
+  color: var(--color-secondary);
+  font-size: var(--scale4);
+}
+
+h3 {
+  color: var(--color-accent);
+  font-size: var(--scale3);
+  grid-column: side;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: var(--scale2);
+}
+
+h5 {
+  font-size: var(--scale1);
+}
+
+h6 {
+  font-size: var(--scale0);
+}
+
+blockquote {
+  border-left: 0.2em solid var(--color-muted);
+  padding-left: 1em;
+}
+
+cite {
+  color: var(--color-secondary);
+  font-style: inherit;
+}
+
+cite::before {
+  content: '— ';
+}
+
+svg {
+  margin-right: 0.2em;
+  vertical-align: -0.2em;
+}
+
+.masthead {
+  background: var(--color-muted);
+  display: inherit;
+  gap: inherit;
+  grid-column: full;
+  grid-template-columns: inherit;
+  padding: 4em 0;
+  text-align: center;
+}
+
+.masthead > *,
+section {
+  grid-column: main;
+}
+
+.masthead > img {
+  border-radius: 50%;
+  margin: 0 auto;
+  max-width: 12em;
+}
+
+article > * + *,
+blockquote > * + * {
+  margin-top: 0.6em;
+}
+
+.meta {
+  color: var(--color-secondary);
+}
+
+.stack {
+  display: grid;
+  gap: 1.5em;
+}
+
+.icon-list {
+  list-style: none;
+  padding: 0;
+}
+
+.grid-list {
+  display: grid;
+  gap: 1em;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.tag-list > li {
+  background: var(--color-muted);
+  margin: 0 0.2em 0.2em 0;
+  padding: 0.2em 0.6em;
+}
+
+.bullet-item:not(:first-child)::before {
+  content: '· ';
+  margin: 0 0.2em;
+}
+
+@media print, (min-width: 48em) {
+  h3 {
+    text-align: right;
+    margin-bottom: inherit;
+  }
+
+  .masthead {
+    text-align: inherit;
+  }
+
+  .masthead > *,
+  section {
+    grid-column: content;
+  }
+
+  .masthead img {
+    grid-column: side;
+    grid-row: span 2;
+    max-width: 100%;
+  }
+
+  section {
+    display: contents;
+  }
+
+  .grid-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+</style>
+  </head>
+  <body>
+      <header class="masthead">
+        <div>
+            <h1>Eduard Malokhvii</h1>
+            <h2>Senior Software Engineer</h2>
+        </div>
+          <article>
+            <p>🐍 Software Engineer with 6+ years of experience in Python, backend development, web scraping, and containerization, with strong experience in Vue.js, frontend development, CI/CD, and networking. 🎓 BA &amp; MA in Computer Engineering. 🚀 Outside of work: ☕ coffee, 📷 photography, and 🛸 FPV drones.</p>
+          </article>
+        <ul class="icon-list">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Chernivtsi, Ukraine
+              </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <a href="mailto:malokhvii.ee@gmail.com">malokhvii.ee@gmail.com</a>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                  <a href="https://www.linkedin.com/in/malokhvii-eduard">malokhvii-eduard</a>
+                <span class="network">(LinkedIn)</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <a href="https://github.com/malokhvii-eduard">malokhvii-eduard</a>
+                <span class="network">(GitHub)</span>
+            </li>
+        </ul>
+      </header>
+
+      <section id="work">
+        <h3>Work</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <h4>Senior Software Engineer</h4>
+                <div class="meta">
+                  <div>
+                    <strong><a href="https://www.linkedin.com/company/globallogic">GlobalLogic</a></strong>
+                  </div>
+                  <div>
+                    <time datetime="2023-11-01">Nov 2023</time> –
+                    Present
+                  </div>
+                    <div>Lviv, Ukraine</div>
+                </div>
+              </header>
+                <p>🎯 Contributed to the development of advanced data analysis and forecasting models (RFM, market basket analysis, marketing mix modeling, customer lifetime value, churn prediction), enhancing product analytical capabilities.</p>
+    <p>🎯 Designed and implemented AI-powered tools based on LLMs, integrating them with analytical and forecasting models and reports to transform data into natural language explanations, actionable insights, and decision-support recommendations, including AI-assisted comparison for trend and anomaly detection.</p>
+    <p>🎯 Built a configurable AI interface for system administrators, enabling customization and debugging of prompt logic and control over agent behavior, and integrated AI-generated insights into automated email reports.</p>
+    <p>🎯 Contributed to the development of an event-driven system for processing transactions and customer actions, enabling configurable workflows and rule-based automation (e.g., coupons, notifications).</p>
+    <p>🎯 Contributed to the development of a custom CRM system for managing offline store feedback, including statuses, prioritization, assignment, and processing tracking.</p>
+    <p>🎯 Improved data visualization and implemented frontend and backend components, including map-based visualizations, enhancing data interpretability and overall user experience.</p>
+    <p>🎯 Collaborated with customers to align solutions with business needs, participated in technical interviews, and mentored team members, contributing to team growth.</p>
+    <p>🛠️ Technologies &amp; Environment: Python, Django, Django REST Framework, Flask, Celery, asyncio, asyncpg, pandas, PyMC, XGBoost, PostgreSQL, RabbitMQ, Redis, JavaScript, Bootstrap 4, CSS, ApexCharts.js, amCharts 5, leaflet.js, D3.js, LLMs, Docker, Linux, Git, GitHub, GitHub Actions.</p>
+            </article>
+            <article>
+              <header>
+                <h4>Software Engineer</h4>
+                <div class="meta">
+                  <div>
+                    <strong><a href="https://www.linkedin.com/company/globallogic">GlobalLogic</a></strong>
+                  </div>
+                  <div>
+                    <time datetime="2022-03-01">Mar 2022</time> –
+                    <time datetime="2023-11-01">Nov 2023</time>
+                  </div>
+                    <div>Lviv, Ukraine</div>
+                </div>
+              </header>
+                <p>🎯 Redesigned legacy product pages, improving user experience through user feedback analysis and client collaboration, resulting in increased engagement, retention, and revenue.</p>
+    <p>🎯 Contributed to the development of analytical models and a configurable analytics processing system, enabling parameterized model execution over custom datasets (e.g., transaction samples) with support for both on-demand and scheduled runs, powering data-driven features and business insights.</p>
+    <p>🎯 Implemented integrations with external advertising platforms (Google Ads, Facebook, TikTok, InforUMobile), collaborating with clients to define requirements, working with platform APIs, and building scalable solutions capable of handling high-load scenarios.</p>
+    <p>🎯 Designed and implemented core backend and frontend components, including a notification system and third-party integrations, improving system reliability and expanding product capabilities.</p>
+    <p>🎯 Collaborated closely with customers to align technical solutions with business needs and ensure successful delivery of product features.</p>
+    <p>🛠️ Technologies &amp; Environment: Python, FastAPI, Django, Django REST Framework, Celery, asyncio, asyncpg, pandas, PostgreSQL, RabbitMQ, Redis, JavaScript, Bootstrap 4, CSS, ApexCharts.js, amCharts 4/5, leaflet.js, D3.js, Docker, Linux, Git, GitLab, GitLab CI.</p>
+            </article>
+            <article>
+              <header>
+                <h4>Software Engineer</h4>
+                <div class="meta">
+                  <div>
+                    <strong>Self-Employed</strong>
+                  </div>
+                  <div>
+                    <time datetime="2021-02-01">Feb 2021</time> –
+                    <time datetime="2021-12-31">Dec 2021</time>
+                  </div>
+                </div>
+              </header>
+                <p>🎯 Designed and developed web applications using serverless architecture, focusing on scalable and cost-efficient deployments.</p>
+    <p>🎯 Designed and implemented scalable web parsers and data extraction pipelines for reliable collection and processing of data from external sources.</p>
+    <p>🛠️ Technologies &amp; Environment: Python, Selenium, Click, tqdm, gspread, plyer, multiprocessing, JavaScript, Babel, HTML5, Sass, Vue.js, Vuex, Nuxt.js, Vuetify, sal.js, ky, npm, husky, webpack, ESLint, PostCSS, PurgeCSS, LQIP, PWA, Netlify, Google Tag Manager, Google Analytics, Google Search Console, Git, GitHub, GitHub Actions.</p>
+            </article>
+            <article>
+              <header>
+                <h4>Python Developer</h4>
+                <div class="meta">
+                  <div>
+                    <strong><a href="https://www.linkedin.com/company/tenviz">TenViz</a></strong>
+                  </div>
+                  <div>
+                    <time datetime="2020-04-01">Apr 2020</time> –
+                    <time datetime="2021-01-31">Jan 2021</time>
+                  </div>
+                    <div>Kharkiv, Ukraine</div>
+                </div>
+              </header>
+                <p>🎯 Developed and maintained high-performance web scrapers and crawlers for financial platforms (investing.com, ishares.com, barchart.com, yahoo.com), ensuring reliable data extraction at scale.</p>
+    <p>🎯 Designed and implemented a fully automated system for generating chart screenshots used in financial reporting workflows.</p>
+    <p>🎯 Built a service for automated configuration, management, and orchestration of Tor proxies to support distributed and fault-tolerant scraping.</p>
+    <p>🎯 Improved performance, stability, and data quality across scraping pipelines through optimization and refactoring.</p>
+    <p>🎯 Resolved critical bugs and production issues, including high-priority incidents.</p>
+    <p>🛠️ Technologies &amp; Environment: Python, PostgreSQL, Selenium, Flask, Swagger, REST, Docker, docker-compose, click, pandas, psycopg2, asyncio, asyncpg, beautifulsoup4, requests, lxml, multiprocessing, Linux, Git, GitLab.</p>
+            </article>
+            <article>
+              <header>
+                <h4>Apprentice at Linux Kernel GL BaseCamp</h4>
+                <div class="meta">
+                  <div>
+                    <strong><a href="https://www.linkedin.com/company/globallogic">GlobalLogic</a></strong>
+                  </div>
+                  <div>
+                    <time datetime="2019-11-30">Nov 2019</time> –
+                    <time datetime="2020-03-31">Mar 2020</time>
+                  </div>
+                    <div>Kharkiv, Ukraine</div>
+                </div>
+              </header>
+                <p>🎯 Learned the foundations of development for Linux User Space.</p>
+    <p>🎯 Learned the foundations of development for Linux Kernel (Virtual file system, Programming interface, Resources, Modules, Dependencies, Loading/unloading, Diagnostics, Debugging, Character device driver, Device Tree, ACPI, Time Management, Memory Management, Interrupts Handling, Concurrency, and Synchronization).</p>
+    <p>🛠️ Technologies &amp; Environment: C, C++, Make, GCC, Clang, Linux, Linux Kernel, ARM, HAL, STM32CubeIDE, STM32CubeMX, Raspberry Pi, Git.</p>
+    <p>🔗 See more: www.globallogic.com/ua/gl-basecamp/linux-kernel</p>
+    <p>🔗 See final project: github.com/malokhvii-eduard/lkmod-bme280</p>
+            </article>
+        </div>
+      </section>
+      <section id="education">
+        <h3>Education</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <h4>National Technical University &quot;Kharkiv Polytechnic Institute&quot;</h4>
+                <div class="meta">
+                    <strong>Computer Engineering</strong>
+                  <div>
+                    <time datetime="2023-10-01">Oct 2023</time> –
+                    <time datetime="2027-01-01">Jan 2027</time>
+                  </div>
+                </div>
+              </header>
+                <p>Doctor of Philosophy</p>
+            </article>
+            <article>
+              <header>
+                <h4>National Technical University &quot;Kharkiv Polytechnic Institute&quot;</h4>
+                <div class="meta">
+                    <strong>Computer Engineering</strong>
+                  <div>
+                    <time datetime="2020-09-30">Sep 2020</time> –
+                    <time datetime="2027-12-31">Dec 2027</time>
+                  </div>
+                </div>
+              </header>
+                <p>Master's degree</p>
+            </article>
+            <article>
+              <header>
+                <h4>National Technical University &quot;Kharkiv Polytechnic Institute&quot;</h4>
+                <div class="meta">
+                    <strong>Computer Engineering</strong>
+                  <div>
+                    <time datetime="2016-12-31">Dec 2016</time> –
+                    <time datetime="2020-12-31">Dec 2020</time>
+                  </div>
+                </div>
+              </header>
+                <p>Bachelor's degree</p>
+            </article>
+        </div>
+      </section>
+      <section id="projects">
+        <h3>Projects</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <h4><a href="https://github.com/malokhvii-eduard/raid">raid</a></h4>
+                <div class="meta">
+                  <div>
+                  </div>
+                  <div>
+                    <time datetime="2022-11-01">Nov 2022</time> –
+                    <time datetime="2022-11-03">Nov 2022</time>
+                  </div>
+                </div>
+              </header>
+                <p>📢 A simple tool to get immediate notifications in Slack once your Ukrainian colleagues become unavailable due to an air raid or artillery shelling threats.</p>
+    <p>🛠️ Technologies &amp; Environment: Python, Typer, pre-commit, sematic-release, Git, GitHub, GitHub Actions.</p>
+            </article>
+            <article>
+              <header>
+                <h4><a href="https://github.com/malokhvii-eduard/bulk-sms">bulk-sms</a></h4>
+                <div class="meta">
+                  <div>
+                  </div>
+                  <div>
+                    <time datetime="2022-01-10">Jan 2022</time> –
+                    <time datetime="2022-01-12">Jan 2022</time>
+                  </div>
+                </div>
+              </header>
+                <p>📮 A simple tool to send SMS messages over the carrier's network from an Android phone using the Android Debug Bridge.</p>
+    <p>🛠️ Technologies &amp; Environment: Python, androidviewclient, click, tqdm, pre-commit, Git, GitHub.</p>
+            </article>
+            <article>
+              <header>
+                <h4><a href="https://github.com/malokhvii-eduard/olx-crawler">olx-crawler</a></h4>
+                <div class="meta">
+                  <div>
+                  </div>
+                  <div>
+                    <time datetime="2021-12-01">Dec 2021</time> –
+                    <time datetime="2022-01-12">Jan 2022</time>
+                  </div>
+                </div>
+              </header>
+                <p>🤖 An easy-to-use, powerful crawler for OLX, that allows collecting various non-sensitive data about ads on the site.</p>
+    <p>🛠️ Technologies &amp; Environment: Python, Selenium, click, tqdm, inject, pre-commit, Git, GitHub.</p>
+            </article>
+            <article>
+              <header>
+                <h4><a href="https://github.com/malokhvii-eduard/airly">airly</a></h4>
+                <div class="meta">
+                  <div>
+                  </div>
+                  <div>
+                    <time datetime="2021-11-30">Nov 2021</time> –
+                    <time datetime="2021-12-31">Dec 2021</time>
+                  </div>
+                </div>
+              </header>
+                <p>💨 A collection of tiny and ultra-cheap web things for monitoring air quality. The devices measure: temperature, humidity, barometric pressure, the concentration of carbon dioxide, dew point. The devices easily integrate into the Web of Things ecosystem and can be used indoor or outdoor.</p>
+    <p>🛠️ Technologies &amp; Environment: Markdown, C++, PlatformIO, Arduino, WebThings, npm, husky, clang-format, sematic-release, UART, I2C, SPI, BME280, MH-Z19, ESP8266, WeMos D1, Git, GitHub, GitHub Actions.</p>
+            </article>
+            <article>
+              <header>
+                <h4><a href="https://github.com/malokhvii-eduard/arduino-bme280">arduino-bme280</a></h4>
+                <div class="meta">
+                  <div>
+                  </div>
+                  <div>
+                    <time datetime="2021-10-31">Oct 2021</time> –
+                    <time datetime="2021-12-31">Dec 2021</time>
+                  </div>
+                </div>
+              </header>
+                <p>💧 Arduino library for Bosch Sensortec BME280 – combined temperature, pressure, humidity sensor. The library allows using the sensor over I2C or SPI on any board that supports Arduino.</p>
+    <p>🛠️ Technologies &amp; Environment: C++, PlatformIO, Arduino, googletest, npm, husky, clang-format, sematic-release, I2C, SPI, BME280, Git, GitHub, GitHub Actions.</p>
+            </article>
+            <article>
+              <header>
+                <h4><a href="https://github.com/malokhvii-eduard/arduino-mhz19">arduino-mhz19</a></h4>
+                <div class="meta">
+                  <div>
+                  </div>
+                  <div>
+                    <time datetime="2021-10-31">Oct 2021</time> –
+                    <time datetime="2021-12-31">Dec 2021</time>
+                  </div>
+                </div>
+              </header>
+                <p>💥 Arduino library for Winsen MH-Z19 – infrared carbon dioxide sensor. The library allows using the sensor over hardware or software UART on any board that supports Arduino.</p>
+    <p>🛠️ Technologies &amp; Environment: C++, PlatformIO, Arduino, googletest, npm, husky, clang-format, sematic-release, UART, MH-Z19, Git, GitHub, GitHub Actions.</p>
+            </article>
+            <article>
+              <header>
+                <h4><a href="https://github.com/malokhvii-eduard/mod3d">mod3d</a></h4>
+                <div class="meta">
+                  <div>
+                  </div>
+                  <div>
+                    <time datetime="2020-12-01">Dec 2020</time> –
+                    <time datetime="2020-12-31">Dec 2020</time>
+                  </div>
+                </div>
+              </header>
+                <p>🎨 A simple 3D editor, that allows wrapping a 3D model into a texture. As a texture, there could be used UV mappings, images, or figures.</p>
+    <p>🛠️ Technologies &amp; Environment: JavaScript, Babel, HTML5, Sass, Vue.js, Vuex, Vuetify, WebGL, Three.js, IndexedDB, yarn, husky, webpack, ESLint, PostCSS, PurgeCSS, LQIP, PWA, Netlify, Blender, Git, GitHub, GitHub Actions.</p>
+            </article>
+            <article>
+              <header>
+                <h4><a href="https://github.com/malokhvii-eduard/lkmod-bme280">lkmod-bme280</a></h4>
+                <div class="meta">
+                  <div>
+                  </div>
+                  <div>
+                    <time datetime="2019-12-31">Dec 2019</time> –
+                    <time datetime="2020-01-31">Jan 2020</time>
+                  </div>
+                </div>
+              </header>
+                <p>💧 Kernel space driver for Bosch Sensortec BME280 – combined temperature, pressure, humidity sensor. The driver allows using the sensor over I2C bus on a single-board computer like Raspberry Pi, Orange Pi, Asus Tinker Board, etc.</p>
+    <p>🛠️ Technologies &amp; Environment: C, Make, clang-format, pre-commit, Linux, Linux Kernel, BME280, Raspberry Pi, Asus Tinker Board, Git, GitHub.</p>
+            </article>
+        </div>
+      </section>
+      <section id="awards">
+        <h3>Awards</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <h4>Master&#x27;s diploma with honours</h4>
+                <div class="meta">
+                    <div>
+                      Awarded by <strong>National Technical University &quot;Kharkiv Polytechnic Institute&quot;</strong>
+                    </div>
+                    <time datetime="2021-12-31">Dec 2021</time>
+                </div>
+              </header>
+            </article>
+            <article>
+              <header>
+                <h4>Bachelor&#x27;s diploma with honors</h4>
+                <div class="meta">
+                    <div>
+                      Awarded by <strong>National Technical University &quot;Kharkiv Polytechnic Institute&quot;</strong>
+                    </div>
+                    <time datetime="2020-06-30">Jun 2020</time>
+                </div>
+              </header>
+            </article>
+            <article>
+              <header>
+                <h4>2nd pace in the RoboRace Competition</h4>
+                <div class="meta">
+                    <div>
+                      Awarded by <strong>Lviv Polytechnic National University</strong>
+                    </div>
+                    <time datetime="2019-10-31">Oct 2019</time>
+                </div>
+              </header>
+                <p>🔗 See more: www.kpi.kharkov.ua/rus/2019/10/30/harkivski-politehniky-sribni-pryzery</p>
+            </article>
+            <article>
+              <header>
+                <h4>1st place in the Line Following Competition</h4>
+                <div class="meta">
+                    <div>
+                      Awarded by <strong>National Technical University &quot;Kharkiv Polytechnic Institute&quot;</strong>
+                    </div>
+                    <time datetime="2019-04-30">Apr 2019</time>
+                </div>
+              </header>
+                <p>🔗 See more: www.kpi.kharkov.ua/rus/2019/04/22/olimpiady-robotiv</p>
+            </article>
+            <article>
+              <header>
+                <h4>3rd place in the RoboSumo Competition</h4>
+                <div class="meta">
+                    <div>
+                      Awarded by <strong>National Technical University &quot;Kharkiv Polytechnic Institute&quot;</strong>
+                    </div>
+                    <time datetime="2019-04-30">Apr 2019</time>
+                </div>
+              </header>
+                <p>🔗 See more: www.kpi.kharkov.ua/rus/2019/04/22/olimpiady-robotiv</p>
+            </article>
+        </div>
+      </section>
+      <section id="publications">
+        <h3>Publications</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <h4><a href="https://ais.khpi.edu.ua/article/view/356642">Multi-Objective Framework for End-Device Processing and Offloading in Industrial IoT</a></h4>
+                <div class="meta">
+                    <div>
+                      Published by <strong>Journal Advanced Information Systems, Vol. 10, No. 2</strong>
+                    </div>
+                    <time datetime="2026-04-03">Apr 2026</time>
+                </div>
+              </header>
+            </article>
+            <article>
+              <header>
+                <h4><a href="https://ieeexplore.ieee.org/abstract/document/11288695">Differential Evolution for Optimized Task Clustering and Scheduling in IoT Edge Computing</a></h4>
+                <div class="meta">
+                    <div>
+                      Published by <strong>2025 IEEE 6th KhPI Week on Advanced Technology</strong>
+                    </div>
+                    <time datetime="2025-10-06">Oct 2025</time>
+                </div>
+              </header>
+            </article>
+            <article>
+              <header>
+                <h4><a href="https://www.linkedin.com/safety/go/?url&#x3D;https%3A%2F%2Fjournals.nupp.edu.ua%2Fsunz%2Farticle%2Fdownload%2F4017%2F3367&amp;urlhash&#x3D;ud_7&amp;isSdui&#x3D;true&amp;lipi&#x3D;urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_publications_details%3Bdpg%2FkVBFSaOccqqU8MiKhg%3D%3D">Adaptive Filtering and Dynamic Computation Offloading for Resilient Task Execution in IIoT</a></h4>
+                <div class="meta">
+                    <div>
+                      Published by <strong>Journal of Control Navigation and Communication Systems, Vol. 3, No. 81</strong>
+                    </div>
+                    <time datetime="2025-09-30">Sep 2025</time>
+                </div>
+              </header>
+            </article>
+            <article>
+              <header>
+                <h4><a href="https://repository.kpi.kharkov.ua/items/4f36cec0-1e8d-47a3-80ff-0a345007c43c">Optimization of Resource Allocation in Fog Computing for IoT through Integration of Trust Mechanisms and Dynamic Task Management</a></h4>
+                <div class="meta">
+                    <div>
+                      Published by <strong>XII International Scientific and Technical Conference &quot;Informatics, Control and Artificial Intelligence&quot;</strong>
+                    </div>
+                    <time datetime="2025-05-14">May 2025</time>
+                </div>
+              </header>
+            </article>
+            <article>
+              <header>
+                <h4><a href="https://repository.kpi.kharkov.ua/items/4f4b634a-389c-4850-a7fd-14419e35bf25">Differential Evolution for Optimized Task Clustering and Scheduling in IoT Edge Computing</a></h4>
+                <div class="meta">
+                    <div>
+                      Published by <strong>XXXIII International Scientific and Practical Conference &quot;Information Technologies: Science, Engineering, Technology, Education, Health&quot;</strong>
+                    </div>
+                    <time datetime="2025-05-14">May 2025</time>
+                </div>
+              </header>
+            </article>
+            <article>
+              <header>
+                <h4><a href="https://repository.kpi.kharkov.ua/items/32d52b30-5c58-4faf-b175-f54355a67ebc">Load Balancing in Fog Computing Environments</a></h4>
+                <div class="meta">
+                    <div>
+                      Published by <strong>XV International Scientific and Technical Conference &quot;Current Directions of Development of Information and Communication Technologies and Control Tools&quot;</strong>
+                    </div>
+                    <time datetime="2025-04-24">Apr 2025</time>
+                </div>
+              </header>
+            </article>
+            <article>
+              <header>
+                <h4><a href="https://repository.kpi.kharkov.ua/items/cee7e44a-0925-4b46-900b-e65819d29ff1">Integration of Trust Mechanisms and Dynamic Task Management for Resource Allocation Optimization in Fog Computing for the Internet of Things</a></h4>
+                <div class="meta">
+                    <div>
+                      Published by <strong>XVIII International Scientific and Practical Student Conference for Master&#x27;s and PhD Students</strong>
+                    </div>
+                    <time datetime="2024-11-09">Nov 2024</time>
+                </div>
+              </header>
+            </article>
+            <article>
+              <header>
+                <h4><a href="https://ais.khpi.edu.ua/article/view/305471">Integration of IoT with Cloud, Fog, and Edge computing: A Review</a></h4>
+                <div class="meta">
+                    <div>
+                      Published by <strong>Journal Advanced Information Systems, Vol. 8, No. 2</strong>
+                    </div>
+                    <time datetime="2024-06-04">Jun 2024</time>
+                </div>
+              </header>
+            </article>
+            <article>
+              <header>
+                <h4><a href="https://repository.kpi.kharkov.ua/items/5cb919c3-9bbd-45d6-9587-fc19f1809dd5">Features of Using Cloud, Fog, and Edge Computing in the Industrial Internet of Things</a></h4>
+                <div class="meta">
+                    <div>
+                      Published by <strong>XI International Scientific and Technical Conference</strong>
+                    </div>
+                    <time datetime="2024-05-09">May 2024</time>
+                </div>
+              </header>
+            </article>
+            <article>
+              <header>
+                <h4><a href="https://nure.ua/wp-content/uploads/2024/tom_1_ict_2024.pdf">A review of issues in integrating the Internet of Things with Cloud, Fog, and Edge computing</a></h4>
+                <div class="meta">
+                    <div>
+                      Published by <strong>XIV International Scientific and Technical Conference, Vol. 1, p. 136</strong>
+                    </div>
+                    <time datetime="2024-04-25">Apr 2024</time>
+                </div>
+              </header>
+            </article>
+            <article>
+              <header>
+                <h4><a href="https://repository.kpi.kharkov.ua/items/b250620f-53d6-4ac2-813c-9e69dfa525f4">The utilization of ExpressLRS for constructing high-performance long-range radio communication with low latency</a></h4>
+                <div class="meta">
+                    <div>
+                      Published by <strong>XVII International Scientific and Practical Student Conference for Master&#x27;s and PhD Students</strong>
+                    </div>
+                    <time datetime="2023-12-01">Dec 2023</time>
+                </div>
+              </header>
+            </article>
+            <article>
+              <header>
+                <h4><a href="https://repository.kpi.kharkov.ua/items/837ea432-c9e1-4ad8-8b99-3f277f9ca441">The role of augmented reality and the Industrial Internet of Things in the Fourth Industrial Revolution</a></h4>
+                <div class="meta">
+                    <div>
+                      Published by <strong>XVII International Scientific and Practical Student Conference for Master&#x27;s and PhD Students</strong>
+                    </div>
+                    <time datetime="2023-12-01">Dec 2023</time>
+                </div>
+              </header>
+            </article>
+            <article>
+              <header>
+                <h4><a href="https://nure.ua/konferencii-ta-workshops/mizhnarodna-naukovo-tekhnichna-konferentsiia-problemy-informatyzatsii/xi-mizhnarodna-naukovo-tekhnichna-konferentsiia-problemy-informatyzatsii">Features of using augmented reality technology in the Industrial Internet of Things</a></h4>
+                <div class="meta">
+                    <div>
+                      Published by <strong>XI International Scientific and Technical Conference &quot;Problems of Informatization&quot;, Vol. 3, p. 115</strong>
+                    </div>
+                    <time datetime="2023-11-16">Nov 2023</time>
+                </div>
+              </header>
+            </article>
+            <article>
+              <header>
+                <h4><a href="https://journals.nupp.edu.ua/sunz/en/article/view/2446/1915">Research of data transmission protocols in the conditions of the Internet of Things</a></h4>
+                <div class="meta">
+                    <div>
+                      Published by <strong>Control, Navigation, and Communication Systems: Collection of Scientific Papers, Vol. 1, No. 67</strong>
+                    </div>
+                    <time datetime="2021-11-22">Nov 2021</time>
+                </div>
+              </header>
+            </article>
+            <article>
+              <header>
+                <h4><a href="https://journals.nupp.edu.ua/sunz/en/article/view/2421/1891">Analytical overview and comparison of modern JavaScript solutions for web application development</a></h4>
+                <div class="meta">
+                    <div>
+                      Published by <strong>Control, Navigation, and Communication Systems: Collection of Scientific Papers, Vol. 4, No. 66</strong>
+                    </div>
+                    <time datetime="2021-11-26">Nov 2021</time>
+                </div>
+              </header>
+            </article>
+            <article>
+              <header>
+                <h4><a href="http://repository.kpi.kharkov.ua/bitstream/KhPI-Press/54370/1/Malokhvii_Vykorystannia_kontseptsii_2021.pdf">Using the Internet of Things concept to build a &quot;Smart Home&quot;</a></h4>
+                <div class="meta">
+                    <div>
+                      Published by <strong>XI International Scientific and Technical Conference</strong>
+                    </div>
+                    <time datetime="2021-09-02">Sep 2021</time>
+                </div>
+              </header>
+            </article>
+            <article>
+              <header>
+                <h4><a href="http://repository.kpi.kharkov.ua/bitstream/KhPI-Press/54369/1/Malokhvii_Vykorystannia_protokolu_2021.pdf">Using the MQTT protocol in a limited bandwidth environment for the Internet of Things</a></h4>
+                <div class="meta">
+                    <div>
+                      Published by <strong>XI International Scientific and Technical Conference</strong>
+                    </div>
+                    <time datetime="2021-12-14">Dec 2021</time>
+                </div>
+              </header>
+            </article>
+            <article>
+              <header>
+                <h4><a href="http://kist.ntu.edu.ua/konferencii/11_konf_2018.pdf">Shortest distance search method based on algorithm A*</a></h4>
+                <div class="meta">
+                    <div>
+                      Published by <strong>VIII International Scientific and Technical Conference</strong>
+                    </div>
+                    <time datetime="2018-04-26">Apr 2018</time>
+                </div>
+              </header>
+            </article>
+        </div>
+      </section>
+      <section id="skills">
+        <h3>Skills</h3>
+        <div class="grid-list">
+            <div>
+                <h4>Frontend</h4>
+                <ul class="tag-list">
+                    <li>JavaScript</li>
+                    <li>Vue.js</li>
+                    <li>Vuetify</li>
+                    <li>Nuxt.js</li>
+                    <li>ApexCharts.js</li>
+                    <li>amCharts 5</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Backend</h4>
+                <ul class="tag-list">
+                    <li>Python</li>
+                    <li>FastAPI</li>
+                    <li>Django</li>
+                    <li>Django REST Framework</li>
+                    <li>Flask</li>
+                    <li>Celery</li>
+                    <li>SQLAlchemy</li>
+                    <li>Pydantic</li>
+                    <li>asyncio</li>
+                    <li>pandas</li>
+                    <li>pytest</li>
+                    <li>PostgreSQL</li>
+                    <li>Redis</li>
+                    <li>RabbitMQ</li>
+                    <li>Elasticsearch</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Others</h4>
+                <ul class="tag-list">
+                    <li>Docker</li>
+                    <li>Docker Compose</li>
+                    <li>Linux</li>
+                    <li>Github Actions</li>
+                    <li>GitLab CI/CD</li>
+                    <li>LLMs</li>
+                    <li>Web Scraping</li>
+                    <li>Playwright</li>
+                    <li>Selenium</li>
+                    <li>C</li>
+                    <li>C++</li>
+                </ul>
+            </div>
+        </div>
+      </section>
+      <section id="languages">
+        <h3>Languages</h3>
+        <div class="grid-list">
+            <div>
+                <h4>English</h4>
+              Upper-Intermediate
+            </div>
+            <div>
+                <h4>Russian</h4>
+              Native Speaker
+            </div>
+            <div>
+                <h4>Ukrainian</h4>
+              Native Speaker
+            </div>
+        </div>
+      </section>
+      <section id="interests">
+        <h3>Interests</h3>
+        <div class="grid-list">
+            <div>
+                <h4>Sport</h4>
+                <ul class="tag-list">
+                    <li>Mountain biking</li>
+                    <li>Road cycling</li>
+                    <li>Swimming</li>
+                    <li>Alpine skiing</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Others</h4>
+                <ul class="tag-list">
+                    <li>FPV Drones</li>
+                    <li>Photography</li>
+                    <li>Coffee</li>
+                    <li>Gardening</li>
+                </ul>
+            </div>
+        </div>
+      </section>
+  </body>
+</html>
