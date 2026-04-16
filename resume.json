@@ -91,6 +91,12 @@
   ],
   "publications": [
     {
+      "name": "Differential Evolution for Optimized Task Clustering and Scheduling in IoT Edge Computing",
+      "publisher": "XXXIII International Scientific and Practical Conference \"Information Technologies: Science, Engineering, Technology, Education, Health\"",
+      "releaseDate": "2025-05-14",
+      "url": "https://repository.kpi.kharkov.ua/items/4f4b634a-389c-4850-a7fd-14419e35bf25"
+    },
+    {
       "name": "Load Balancing in Fog Computing Environments",
       "publisher": "XV International Scientific and Technical Conference \"Current Directions of Development of Information and Communication Technologies and Control Tools\"",
       "releaseDate": "2025-04-24",
